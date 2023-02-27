@@ -27,6 +27,15 @@ Open your web browser and go to [https://colab.research.google.com/](https://col
 Once you're signed in, you'll see the following screen:
 ![image](https://user-images.githubusercontent.com/28285670/221691858-890b2d2c-a8df-4299-b3aa-bc7315f38f22.png)
 
+## _Optional_ Intro to notebooks and unix
+You will need to click the "GitHub" tab and then paste the following into the search bar:
+```bash
+https://github.com/WCSCourses/SARS-COV-2_B4B/blob/main/Modules/Module_1_Notebook_Part1and2_v2.ipynb
+```
+Then press the search button. For example:
+![image](https://user-images.githubusercontent.com/28285670/221709996-e2844b6a-a7f9-45d0-93e8-2ddc63a35761.png)
+
+
 ## Sequencing run quality control (Nanopore)
 You will need to click the "GitHub" tab and then paste the following into the search bar:
 ```bash
