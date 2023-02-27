@@ -1,7 +1,7 @@
 #### Author: Rhys White
 #### Affiliations: Institute of Environmental Science and Research - ESR
 
-# A step-by-step tutorial for Google Colaboratory
+# A tutorial for Google Colaboratory
 
 ## Introduction
 
