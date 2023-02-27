@@ -32,6 +32,8 @@ You will need to click the "GitHub" tab and then paste the following into the se
 ```bash
 https://github.com/WCSCourses/SARS-COV-2_B4B/blob/main/Modules/Module_2_Part1_Sequencing_Run_QC_(Nanopore_and_Illumina).ipynb
 ```
-Then press the search button. This will open the Wellcome Connecting Science repository for initial quality control for Nanopore and Illumina SARS-CoV-2 genome sequencing.
+Then press the search button. This will open the Wellcome Connecting Science repository for initial quality control for Nanopore and Illumina SARS-CoV-2 genome sequencing. For example:
+![image](https://user-images.githubusercontent.com/28285670/221702675-a6050e10-f93c-4e1b-8fd7-d3cf32c8aa8b.png)
+
 
 ## Now, we will utilise the Wellcome Connecting Science repository for Initial QC for Nanopore and Illumina SARS-CoV-2 genome sequencing to evaluate the quality of our sequence read data.
