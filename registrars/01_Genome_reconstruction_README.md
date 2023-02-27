@@ -19,6 +19,5 @@ You will need to click the "GitHub" tab and then paste the following into the se
 https://github.com/WCSCourses/SARS-COV-2_B4B/blob/main/Modules/Module_2_Part2_Nanopore_SARS_CoV_2_genome_reconstruction.ipynb
 ```
 Then press the search button. This will open the Wellcome Connecting Science repository for genome reconstruction for Nanopore SARS-CoV-2 genome sequencing.
-![image](https://user-images.githubusercontent.com/28285670/221700777-9cd5975c-5ba5-4b8d-9451-ec4bfe797801.png)
 
 ## Now, we will utilise the Wellcome Connecting Science repository for Nanopore SARS-CoV-2 genome reconstruction to assemble our sequence data.
