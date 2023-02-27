@@ -27,11 +27,11 @@ Open your web browser and go to [https://colab.research.google.com/](https://col
 Once you're signed in, you'll see the following screen:
 ![image](https://user-images.githubusercontent.com/28285670/221691858-890b2d2c-a8df-4299-b3aa-bc7315f38f22.png)
 
-## Sequencing run qualiuty contril (Nanopore)
+## Sequencing run qualiuty controil (Nanopore)
 You will need to click the "GitHub" tab and then paste the following into the search bar:
 ```bash
 https://github.com/WCSCourses/SARS-COV-2_B4B/blob/main/Modules/Module_2_Part1_Sequencing_Run_QC_(Nanopore_and_Illumina).ipynb
 ```
 Then press the search button. This will open the Wellcome Connecting Science repository for initial quality control for Nanopore and Illumina SARS-CoV-2 genome sequencing.
 
-Now, we will utilise the Wellcome Connecting Science repository for Initial QC for Nanopore and Illumina SARS-CoV-2 genome sequencing to evaluate the quality of our sequence read data.
+## Now, we will utilise the Wellcome Connecting Science repository for Initial QC for Nanopore and Illumina SARS-CoV-2 genome sequencing to evaluate the quality of our sequence read data.
