@@ -31,6 +31,7 @@ A BAM (Binary Alignment Map) file format is a binary representation of the SAM f
 To read a SAM file, you can use a text editor or a command-line tool like [SAMtools](http://www.htslib.org/). Let's dive right in and observe what reads appear as when mapped to a genomic sequence.
 
 #### Let's start with a BAM!
+
 You have been given two files: a read-mapping file in BAM format named `Chlamydia_mapped.bam` and a reference sequence in fasta format named `Chlamydia_horse.fasta`. To begin, create a directory called `mapping` and copy both files into it. Afterwards, navigate to the `mapping` folder:
 
 
