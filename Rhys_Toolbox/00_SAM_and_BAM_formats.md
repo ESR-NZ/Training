@@ -1,4 +1,4 @@
-#### Author: Rhys White
+#### Author: Rhys White ([@RhysTWhite](https://twitter.com/RhysTWhite))
 #### Affiliations: Institute of Environmental Science and Research - ESR
 
 # Rhys' roadmap to SAM: a tutorial for navigating read-mapping files
@@ -238,27 +238,10 @@ This tutorial uses example paired-end short-read sequencing data from our phylog
 
 &emsp; **White RT**, Jelocnik M, Klukowski N, Haque MH, Sarker S. The first genomic insight into *Chlamydia psittaci* sequence type (ST)24 from a healthy captive psittacine host in Australia demonstrates evolutionary proximity with strains from psittacine, human, and equine hosts. *Veterinary Microbiology* 2023;109704 doi: [10.1016/j.vetmic.2023.109704](https://doi.org/10.1016/j.vetmic.2023.109704)
 
+#### Data availability
 
-```less
-License
+Sequence read data has been submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) under BioProject [PRJNA888783](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA888783)
 
-Copyright (c) 2022 ESR
+Raw Illumina sequence read data have been deposited to the NCBI SRA under the accession number [SRR21848900](https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA888783)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+In addition, the high-quality assembly has been deposited to the NCBI GenBank database under the accession numbers [CP110211](https://www.ncbi.nlm.nih.gov/nuccore/CP110211.1) and [CP110212](https://www.ncbi.nlm.nih.gov/nuccore/CP110212.1).
