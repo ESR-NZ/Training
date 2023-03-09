@@ -119,7 +119,7 @@ head -n 5 Chlamydia_mapped.sam | less -S
 
 You should see a similar output to this on your screen:
 
-```less
+```
 BF_amazon_parrot13-127808	99	9945_foetus	10	60	100M	=	295	385	ACTCTATCTTTTTCAGAAGTTGTGGAAAGTGTTGAAGGAATGTAAAAATGAGCTCATTAGCGTTGAGTCGACGACCTCGTAGAAATAGAAGAACTGAGGC	CBCCCGGGGGGGGGGGGCCGGGGGGGCEGGG>GBDGGGGGGGGGGGGGGGGGGFG/FGGGGGFGBG/GDGECGGE>GGGF.?>GGG8G?GGGGGEGGGG<	NM:i:0	MD:Z:100	MC:Z:100M	AS:i:100	XS:i:0
 BF_amazon_parrot13-191146	99	9945_foetus	14	60	100M	=	280	366	TATCTTTTTCAGAAGTTGTGGAAAGTGTTGAAGGAATGTAAAAATGAGCTCATTAGCGTTGAGTCGACGACCTCGTAGAAATAGAAGAACTGAGGCAATT	CBCCCGDFCGGGCGGG1FBGGGGDGGEGGGGFAGGGGGGGGGGGGGGGGGGGGGGGGGGGG1GG9GFGGGGGGGGGGGGGGGGGGGGCGGGGGGDDGGGG	NM:i:0	MD:Z:100	MC:Z:100M	AS:i:100	XS:i:0
 BF_amazon_parrot13-48918	163	9945_foetus	25	60	100M	=	355	430	GAAGTTGTGGAAAGTGTTGAAGGAATGTAAAAATGAGCTCATTAGCGTTGAGTCGACGACCTCGTAGAAATAGAAGAACTGAGGCAATTCGTGATTTGGT	ABCBBGF=>GGGG/GGGGGGG1GGGG1GGGGG=GGGGDGDGGGGG:GGGFGGGGGGEGGGGGGGGGGGCGDGG/GGGGGGFEGG0G>GGGGGE0FFGGGG	NM:i:0	MD:Z:100	MC:Z:100M	AS:i:100	XS:i:0
@@ -129,7 +129,7 @@ BF_amazon_parrot13-33382	163	9945_foetus	52	60	100M	=	295	343	TAAAAATGAGCTCATTAG
 
 Within the file's alignment section, there are two alignment records present, one for each read. Each of these records comprises 11 mandatory fields as well as a few optional fields. It's important to note that the mandatory fields include:
 
-```less
+```
 Index.	Field name:	Description
 1.	QNAME:	Query template NAME. This is a unique identifier for the read that was aligned
 2.	FLAG:	A set of bitwise flags that describe various properties of the alignment, such as whether it's paired-end or single-end, whether it's mapped, whether it's reverse-complemented, etc
@@ -161,7 +161,7 @@ The FLAG field is a 16-bit field represented as a decimal number. Each bit in th
 
 Here is an example of a FLAG field in binary format:
 
-```bash
+```
 101000
 ```
 
@@ -169,7 +169,7 @@ Here is an example of a FLAG field in binary format:
 
 Here are some common FLAG values and what they represent:
 
-```less
+```
 Hex Code:	Description
 0x0001: read is the first read in a pair
 0x0002: read is the second read in a pair
@@ -186,7 +186,7 @@ Hex Code:	Description
 
 Each position in the binary string corresponds to a different bit, as follows:
 
-```sql
+```
 1 0 1 0 0 0
 ^ ^ ^ ^ ^ ^
 | | | | | |
@@ -219,7 +219,7 @@ The CIGAR field in SAM files provides a compact representation of the alignment 
 
 The CIGAR field is a string of characters that represents the alignment of the read. Each character in the CIGAR string corresponds to an operation that was performed during the alignment. The possible operations are:
 
-```less
+```
 Operation - Description
 M - alignment match or mismatch
 I - insertion to the reference
