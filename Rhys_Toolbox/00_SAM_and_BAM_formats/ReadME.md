@@ -252,17 +252,17 @@ Accurately identifying single-nucleotide variants (SNVs), insertions and deletio
 That's it for this tutorial on SAM files! If you have any further questions, feel free to ask.
 
 
-### Final notes
+<sub> **Final notes** <sup>
 
-This tutorial uses example paired-end short-read sequencing data from our phylogenomic study of *Chlamydia psittaci* sequence type (ST)24. I invite you to read our publication if you find this data intriguing:
+<sup> This tutorial uses example paired-end short-read sequencing data from our phylogenomic study of *Chlamydia psittaci* sequence type (ST)24. I invite you to read our publication if you find this data intriguing: <sup>
 
 
-&emsp; **White RT**, Jelocnik M, Klukowski N, Haque MH, Sarker S. The first genomic insight into *Chlamydia psittaci* sequence type (ST)24 from a healthy captive psittacine host in Australia demonstrates evolutionary proximity with strains from psittacine, human, and equine hosts. *Veterinary Microbiology* 2023;109704 doi: [10.1016/j.vetmic.2023.109704](https://doi.org/10.1016/j.vetmic.2023.109704)
+<sub> &emsp; **White RT**, Jelocnik M, Klukowski N, Haque MH, Sarker S. The first genomic insight into *Chlamydia psittaci* sequence type (ST)24 from a healthy captive psittacine host in Australia demonstrates evolutionary proximity with strains from psittacine, human, and equine hosts. *Veterinary Microbiology* 2023;109704 doi: [10.1016/j.vetmic.2023.109704](https://doi.org/10.1016/j.vetmic.2023.109704)<sub> 
 
-#### Data availability
+<sub> **Data availability** <sub> 
 
-Sequence read data has been submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) under BioProject [PRJNA888783](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA888783)
+<sub> Sequence read data has been submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) under BioProject [PRJNA888783](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA888783) <sub>
 
-Raw Illumina sequence read data have been deposited to the NCBI SRA under the accession number [SRR21848900](https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA888783)
+<sub> Raw Illumina sequence read data have been deposited to the NCBI SRA under the accession number [SRR21848900](https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA888783) <sub>
 
-In addition, the high-quality assembly has been deposited to the NCBI GenBank database under the accession numbers [CP110211](https://www.ncbi.nlm.nih.gov/nuccore/CP110211.1) and [CP110212](https://www.ncbi.nlm.nih.gov/nuccore/CP110212.1).
+<sub> In addition, the high-quality assembly has been deposited to the NCBI GenBank database under the accession numbers [CP110211](https://www.ncbi.nlm.nih.gov/nuccore/CP110211.1) and [CP110212](https://www.ncbi.nlm.nih.gov/nuccore/CP110212.1). <sub> 
