@@ -38,7 +38,9 @@ Note: The data is ~20 MB. To download the data, please run these commands:
 ```bash
 # Download the reference assembly fasta file:
 wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Rhys_Toolbox/00_SAM_and_BAM_formats/Chlamydia_horse.fasta
+```
 
+```bash
 # Download the BAM format file:
 wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Rhys_Toolbox/00_SAM_and_BAM_formats/Chlamydia_mapped.bam
 ```
