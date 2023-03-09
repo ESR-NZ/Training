@@ -265,4 +265,4 @@ That's it for this tutorial on SAM files! If you have any further questions, fee
 
 <sub> Raw Illumina sequence read data have been deposited to the NCBI SRA under the accession number [SRR21848900](https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA888783) <sub>
 
-<sub> In addition, the high-quality assembly has been deposited to the NCBI GenBank database under the accession numbers [CP110211](https://www.ncbi.nlm.nih.gov/nuccore/CP110211.1) and [CP110212](https://www.ncbi.nlm.nih.gov/nuccore/CP110212.1). <sub> 
+<sub> In addition, the high-quality assembly has been deposited to the NCBI GenBank database under the accession numbers [CP110211](https://www.ncbi.nlm.nih.gov/nuccore/CP110211.1) and [CP110212](https://www.ncbi.nlm.nih.gov/nuccore/CP110212.1) <sub> 
