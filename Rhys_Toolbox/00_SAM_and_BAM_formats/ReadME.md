@@ -51,13 +51,19 @@ You have been given two files: a read-mapping file in BAM format named `Chlamydi
 ```bash
 # Make a directory called mapping:
 mkdir mapping
+```
 
+```bash
 # Copy the BAM format file into your mapping directory:
 cp /path/to/Chlamydia_mapped.bam mapping/.
+```
 
+```bash
 # Copy the fasta format file into your mapping directory:
 cp /path/to/Chlamydia_horse.fasta mapping/.
+```
 
+```bash
 # Change directory to your mapping directory
 cd mapping
 ```
