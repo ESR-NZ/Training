@@ -1,3 +1,6 @@
+#### Author: Rhys White ([@RhysTWhite](https://twitter.com/RhysTWhite))
+#### Affiliations: Institute of Environmental Science and Research - ESR
+
 Error-free paired-end reads from the previously published _Chlamydia psittaci_ sequence type (ST)24 strain BF_amazon_parrot13 were simulated using ART version 2.5.8 to 30 x coverage, with an insert size of 340 bp (standard deviation (SD) ± 40 bp). 
 
 #### References
