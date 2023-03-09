@@ -24,13 +24,21 @@ A SAM file is a text file that stores information about sequence alignments. Gen
 
 A BAM (Binary Alignment Map) file format is a binary representation of the SAM format used to store DNA sequencing data. As a result, the data is compressed to reduce storage requirements, and the binary format allows for faster processing and retrieval of information. 
 
-## Let's begin...
+## Let's get started...
 
 ### How to view a SAM or BAM file
 
 To read a SAM file, you can use a text editor or a command-line tool like [SAMtools](http://www.htslib.org/). Let's dive right in and observe what reads appear as when mapped to a genomic sequence.
 
 #### Let's start with a BAM!
+
+##### Getting the data
+Note: The data is ~20 MB. To download the data, please run these commands:
+
+```bash
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Rhys_Toolbox/00_SAM_and_BAM_formats/Chlamydia_horse.fasta
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Rhys_Toolbox/00_SAM_and_BAM_formats/Chlamydia_mapped.bam
+```
 
 You have been given two files: a read-mapping file in BAM format named `Chlamydia_mapped.bam` and a reference sequence in fasta format named `Chlamydia_horse.fasta`. To begin, create a directory called `mapping` and copy both files into it. Afterwards, navigate to the `mapping` folder:
 
