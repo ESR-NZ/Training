@@ -232,6 +232,7 @@ Accurately identifying single-nucleotide variants (SNVs), insertions and deletio
 That's it for this tutorial on SAM files! If you have any further questions, feel free to ask.
 
 
+### Final notes
 
 This tutorial uses example paired-end short-read sequencing data from our phylogenomic study of *Chlamydia psittaci* sequence type (ST)24. If you're interested in this data, then please consider reading our publication:
 
