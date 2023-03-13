@@ -162,7 +162,7 @@ The FLAG field is a 16-bit field represented as a decimal number. Each bit in th
 To convert the FLAG value in `samtools` into binary format, you will need to convert the decimal value of the FLAG field to binary using the built-in `bin()` function in Python. For example, if the decimal value of the FLAG field is 99, you would convert it to binary using the following code:
 
 ```python
-bin(99)
+>>> bin(99)
 ```
 Your output should look like this:
 ```
