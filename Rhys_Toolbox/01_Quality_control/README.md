@@ -190,6 +190,9 @@ This will run `Kraken2` on the paired-end input sequences `${SAMPLE}_trimmed_1.f
 
 The `--output` flag specifies the output file where `Kraken2` will save the classified sequences. The `--report` flag specifies the report file where `Kraken2` will save a summary of the classification results. `Kraken2` can handle gzip compressed files as input by specifying `--gzip-compressed` flag. The `--threads` flag specifies the number of CPU threads to use for classification (parallel processing). The output will be written to a file called "Corella_11_kraken2_output" and a report file called "Corella_11_kraken2_report".
 
+**Question**<br>
+**(i) Based on your analysis, which bacterial species do the majority of the reads belong to?**<br>
+
 ## Why have I learnt this?
 
 Tools like `FastQC`, `Trimmomatic`, and `Kraken2` are essential for analysing sequence data before downstream analysis. `FastQC` provides a detailed quality control report, identifying potential issues with data and allowing researchers to decide whether to perform additional quality control steps. `Trimmomatic` removes low-quality reads, adapter sequences, and contaminants to improve the accuracy of downstream analysis. `Kraken2` classifies reads based on their taxonomic origin, helping researchers understand the microbial community present in the sample and identify potential sources of error. Using these tools before downstream analysis can improve the quality and accuracy of the data, leading to more informed decisions and accurate results.
