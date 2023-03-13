@@ -82,7 +82,7 @@ To view the information in the BAM file, we must first create an index for it. T
 samtools index Chlamydia_mapped.bam
 ```
 
-We can now begin using the `samtools` viewer using the following command:
+We can now begin using the `samtools` viewer. You can access the manual page for `samtools tview` by following this link: [http://www.htslib.org/doc/samtools-tview.html](http://www.htslib.org/doc/samtools-tview.html) We can use the `samtools` viewer using the following command: 
 
 ```bash
 # Open the samtools viewer:
