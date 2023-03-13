@@ -54,13 +54,13 @@ mkdir mapping
 ```
 
 ```bash
-# Copy the BAM format file into your mapping directory:
-cp /path/to/Chlamydia_mapped.bam mapping/.
+# Move the BAM format file into your mapping directory:
+mv /path/to/Chlamydia_mapped.bam mapping/.
 ```
 
 ```bash
-# Copy the fasta format file into your mapping directory:
-cp /path/to/Chlamydia_horse.fasta mapping/.
+# Move the fasta format file into your mapping directory:
+mv /path/to/Chlamydia_horse.fasta mapping/.
 ```
 
 ```bash
