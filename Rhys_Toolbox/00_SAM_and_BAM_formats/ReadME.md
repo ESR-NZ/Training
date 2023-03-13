@@ -45,7 +45,7 @@ wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Rhys_Toolbox/00_SAM_
 wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Rhys_Toolbox/00_SAM_and_BAM_formats/Chlamydia_mapped.bam
 ```
 
-You have been given two files: a read-mapping file in BAM format named `Chlamydia_mapped.bam` and a reference sequence in fasta format named `Chlamydia_horse.fasta`. To begin, create a directory called `mapping` and copy both files into it. Afterwards, navigate to the `mapping` folder:
+You have been given two files: a read-mapping file in BAM format named `Chlamydia_mapped.bam` and a reference sequence in fasta format named `Chlamydia_horse.fasta`. To begin, create a directory called `mapping` and move both files into it. Afterwards, navigate to the `mapping` folder:
 
 
 ```bash
