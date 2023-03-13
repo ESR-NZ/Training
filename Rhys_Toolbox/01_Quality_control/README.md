@@ -102,7 +102,7 @@ After `FastQC` has finished running, navigate to the output directory specified 
 
 The `FastQC` reports provide information about the quality of the sequencing data, including metrics such as per-base quality scores, GC content, and sequence length distribution. The reports can be used to identify potential issues with the sequencing data and to guide downstream analysis.
 
-**Question**. 
+**Questions**<br>
 **(i) How many reads does each of these fastq files contain?**<br>
 **(ii) Are these single-end or paired-end reads?**<br>
 **(iii) How long is each of the reads?**<br>
@@ -163,7 +163,7 @@ Once `Trimmomatic` has finished running, you should see your output files in the
 
 I recommend running the trimmed reads through `FastQC` to compare them with the raw reads.
 
-**Question**. 
+**Questions**<br>
 **(i) How many reads does each of these fastq files contain?**<br>
 **(ii) How long is each of the reads?**<br>
 **(iii) How do these metrics differ from the raw reads?**<br>
