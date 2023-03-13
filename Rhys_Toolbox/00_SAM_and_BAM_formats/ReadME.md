@@ -3,6 +3,21 @@
 
 # Rhys' roadmap to SAM: a tutorial for navigating read-mapping files
 
+Table of contents
+=================
+
+<!--ts-->
+   * [Prerequisites](#prerequisites)
+   * [Introduction](#introduction)
+      * [What is a SAM file?](#what-is-a-sam-file)
+      * [What is a BAM file?](#what-is-a-bam-file)
+   * [Let's get started...](#lets-get-started)
+      * [How to view a SAM or BAM file](#how-to-view-a-sam-or-bam-file)
+   * [Why have I learnt this?](#why-have-i-learnt-this)
+   * [Final notes](#final-notes)
+   * [Data availability](#data-availability)
+<!--te-->
+
 ## Prerequisites
 Before we begin, you should have a basic understanding of genomics and the concept of DNA sequencing. You should also be familiar with the command line and have access to a Unix-based operating system (such as Linux or macOS). The focus of this tutorial is on a tool called `samtools`, and you can find its manual here: [http://www.htslib.org/doc/samtools.html](http://www.htslib.org/doc/samtools.html)
 
@@ -263,14 +278,14 @@ Accurately identifying single-nucleotide variants (SNVs), insertions and deletio
 That's it for this tutorial on SAM files! If you have any further questions, feel free to ask.
 
 
-<sub> **Final notes** <sup>
+###### Final notes
 
 <sup> This tutorial uses example paired-end short-read sequencing data from our phylogenomic study of *Chlamydia psittaci* sequence type (ST)24. I invite you to read our publication if you find this data intriguing: <sup>
 
 
 <sub> &emsp; **White RT**, Jelocnik M, Klukowski N, Haque MH, Sarker S. The first genomic insight into *Chlamydia psittaci* sequence type (ST)24 from a healthy captive psittacine host in Australia demonstrates evolutionary proximity with strains from psittacine, human, and equine hosts. *Veterinary Microbiology* 2023;109704 doi: [10.1016/j.vetmic.2023.109704](https://doi.org/10.1016/j.vetmic.2023.109704)<sub> 
 
-<sub> **Data availability** <sub> 
+###### Data availability
 
 <sub> Sequence read data has been submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) under BioProject [PRJNA888783](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA888783) <sub>
 
