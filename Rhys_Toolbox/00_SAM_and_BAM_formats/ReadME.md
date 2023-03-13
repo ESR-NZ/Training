@@ -4,7 +4,7 @@
 # Rhys' roadmap to SAM: a tutorial for navigating read-mapping files
 
 ## Prerequisites
-Before we begin, you should have a basic understanding of genomics and the concept of DNA sequencing. You should also be familiar with the command line and have access to a Unix-based operating system (such as Linux or macOS).
+Before we begin, you should have a basic understanding of genomics and the concept of DNA sequencing. You should also be familiar with the command line and have access to a Unix-based operating system (such as Linux or macOS). The focus of this tutorial is on a tool called 'samtools', and you can find its manual here: [http://www.htslib.org/doc/samtools.html](http://www.htslib.org/doc/samtools.html)
 
 ## Introduction
 
