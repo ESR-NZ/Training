@@ -159,7 +159,18 @@ More information about the FLAG and CIGAR field is below.
 
 The FLAG field is a 16-bit field represented as a decimal number. Each bit in the field represents a different property of the read alignment. Therefore, to interpret the FLAG value, we need to convert it to binary and examine each bit.
 
-Here is an example of a FLAG field in binary format:
+To convert the FLAG value in `samtools` into binary format, you will need to convert the decimal value of the FLAG field to binary using the built-in `bin()` function in Python. For example, if the decimal value of the FLAG field is 99, you would convert it to binary using the following code:
+
+```python
+bin(99)
+```
+Your output should look like this:
+```
+0b1100011
+```
+The prefix `0b` indicates that the value is in binary format.
+
+Here is another example of a FLAG field in binary format:
 
 ```
 101000
