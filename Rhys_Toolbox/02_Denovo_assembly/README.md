@@ -12,7 +12,7 @@ Table of contents
    * [Let's get started...](#lets-get-started)
       * [Read _De Novo_ Assembly](#read-de-novo-assembly)
       * [_De novo_ assembly of Illumina sequence reads with Velvet](#de-novo-assembly-of-illumina-sequence-reads-with-velvet)
-      * [Conquering Taxonomic Classification with Kraken2](#conquering-taxonomic-classification-with-kraken2)
+      * [_De novo_ assembly of Illumina sequence reads with SPAdes](#de-novo-assembly-of-illumina-sequence-reads-with-spades)
       * [Analyse the draft assembly metrics](#analyse-the-draft-assembly-metrics)      
       * [Conquering Taxonomic Classification with Kraken2](#conquering-taxonomic-classification-with-kraken2)  
    * [Why have I learnt this?](#why-have-i-learnt-this)
@@ -192,7 +192,7 @@ The `contigs.fa` file from your best assembly will be utilised for other in upco
 
 In conclusion, `velvet` is a powerful tool for _de novo_ assembly of Illumina sequence reads. By following the above steps, you can use `velvet` to assemble your sequence data and obtain a high-quality assembly.
   
-  
+### _De novo_ assembly of Illumina sequence reads with SPAdes
 Rhys To-do: SPAdes
 
 
