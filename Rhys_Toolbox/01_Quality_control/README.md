@@ -176,6 +176,10 @@ This section will cover the basics for using `Kraken2` to classify sequence read
 
 The manual for `Kraken2` can be found here: [https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown)
 
+Remember to cite the paper:
+
+&emsp; Wood DE, Salzberg SL. Kraken: ultrafast metagenomic sequence classification using exact alignments. _Genome Biology_ 2014;15:R46 doi: [10.1186/gb-2014-15-3-r46](https://doi.org/10.1186/gb-2014-15-3-r46)
+
 #### Classifying your reads
 
 We can use `Kraken2` to classify our example sequences. To classify the sequences, we will use the following `Kraken2` command:
