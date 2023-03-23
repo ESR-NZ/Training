@@ -88,10 +88,6 @@ To obtain more information about the `ln` command and its available options, you
 
 The next step is assembling the high-quality reads into contigs using a _de novo_ assembler. Many _de novo_ assemblers are available, but today we will focus on Velvet ([Zerbino et al. 2008](https://doi.org/10.1101/gr.074492.107)) and SPAdes ([Bankevich et al. 2012](https://doi.org/10.1089/cmb.2012.0021)). These assemblers use different algorithms and heuristics to assemble the reads, so it is essential to test and compare the performance of multiple assemblers on your specific dataset. We will evaluate how varying k-mer lengths can impact the assembly process.
 
-You can find the `velvet` manual by following this link: [https://github.com/dzerbino/velvet/blob/master/Manual.pdf](https://github.com/dzerbino/velvet/blob/master/Manual.pdf).
-
-You can find the `SPAdes` manual by following this link: [https://github.com/ablab/spades](https://github.com/ablab/spades).
-
 Remember to cite the papers:
 
 &emsp; Bankevich A, Nurk S, Antipov D, Gurevich AA, Dvorkin M, Kulikov AS, _et al_. SPAdes: a new genome assembly algorithm and its applications to single-cell sequencing. _Journal of Computational Biology_ 2012;19:455-477 doi: [10.1089/cmb.2012.0021](https://doi.org/10.1089/cmb.2012.0021) 
@@ -109,6 +105,8 @@ Remember to cite the papers:
 (b) `velvetg`: Here, de Bruijn graphs are constructed and manipulated to assemble the data into contigs.
 - Input: Sequences and Roadmaps (from `velveth`)
 - Output: An output directory containing contigs in FASTA format, as well as statistics and log files.
+
+You can find the `velvet` manual by following this link: [https://github.com/dzerbino/velvet/blob/master/Manual.pdf](https://github.com/dzerbino/velvet/blob/master/Manual.pdf).
 
 ##### velveth
 
@@ -194,6 +192,7 @@ In conclusion, `velvet` is a powerful tool for _de novo_ assembly of Illumina se
   
 ### _De novo_ assembly of Illumina sequence reads with SPAdes
 Rhys To-do: SPAdes
+You can find the `SPAdes` manual by following this link: [https://github.com/ablab/spades](https://github.com/ablab/spades).
 
 
 ## Analyse the draft assembly metrics
