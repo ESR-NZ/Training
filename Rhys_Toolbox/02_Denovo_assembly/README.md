@@ -191,9 +191,24 @@ The `contigs.fa` file from your best assembly will be utilised for other in upco
 In conclusion, `velvet` is a powerful tool for _de novo_ assembly of Illumina sequence reads. By following the above steps, you can use `velvet` to assemble your sequence data and obtain a high-quality assembly.
   
 ### _De novo_ assembly of Illumina sequence reads with SPAdes
-Rhys To-do: SPAdes
-You can find the `SPAdes` manual by following this link: [https://github.com/ablab/spades](https://github.com/ablab/spades).
 
+You can find the `spades` manual by following this link: [https://github.com/ablab/spades](https://github.com/ablab/spades).
+
+To run `spades`, you need to specify the input files and parameters. The basic command to run `spades` is:
+
+```
+spades.py -o output_dir -1 reads_R1.fastq -2 reads_R2.fastq
+```
+
+In this command, `-o` specifies the output directory, `-1` and `-2` specify the paired-end reads, and `spades.py` is the SPAdes binary file. You can also specify additional parameters, such as the k-mer size (`-k`), the coverage cutoff for error correction (`--cov-cutoff`), and the number of threads (`-t`).
+
+Now, we're going to run `spades` using our trimmed reads:
+
+```
+spades.py -t 4 -o output_dir -1 Corella_11_Sub_trimmed_1.fastq.gz -2 Corella_11_Sub_trimmed_2.fastq.gz -o Corella_11_Sub_spades_output
+```
+
+`spades` is another powerful tool for _de novo_ genome assembly. By following the above steps, you can use `spades` to assemble your sequence data and obtain a high-quality assembly.
 
 ## Analyse the draft assembly metrics
 
