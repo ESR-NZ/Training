@@ -13,8 +13,8 @@ Table of contents
       * [Read _De Novo_ Assembly](#read-de-novo-assembly)
       * [_De novo_ assembly of Illumina sequence reads with Velvet](#de-novo-assembly-of-illumina-sequence-reads-with-velvet)
       * [Conquering Taxonomic Classification with Kraken2](#conquering-taxonomic-classification-with-kraken2)
-      
-      
+      * [Analyse the draft assembly metrics](#analyse-the-draft-assembly-metrics)      
+      * [Conquering Taxonomic Classification with Kraken2](#conquering-taxonomic-classification-with-kraken2)  
    * [Why have I learnt this?](#why-have-i-learnt-this)
    * [Final notes](#final-notes)
    * [Data availability](#data-availability)
@@ -195,7 +195,22 @@ In conclusion, `velvet` is a powerful tool for _de novo_ assembly of Illumina se
   
 Rhys To-do: SPAdes
 
-Rhys To-do: QUAST
+
+## Analyse the draft assembly metrics
+
+We can analyse the `velvet` and `spades` output using tools such as QUAST (QUality ASsessment Tool) to evaluate the genome assembly quality.
+
+The manual for QUAST can be found here: [https://github.com/ablab/quast](https://github.com/ablab/quast)
+
+QUAST is a popular software tool used to assess the quality of genome assemblies. It can produce various valuable metrics, including N50, L50, and other statistics that can help you determine the quality of your assembly.
+  
+To run QUAST, we will use the `quast.py` command.
+
+```bash
+quast.py /path/to/assembly/${SAMPLE}.fasta -o quast_${SAMPLE}_output
+```
+
+Replace `${SAMPLE}.fasta` with the names of your input files. This will generate a report summarising the quality of the genome assembly.
 
 Rhys To-do: CheckM
   
