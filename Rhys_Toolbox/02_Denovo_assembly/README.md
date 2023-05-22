@@ -144,7 +144,7 @@ For example, to construct contigs with a minimum length of 100 bp from the hash 
 
 ```
 # Run velvetg:
-velvetg velvet31_output -min_contig_lgth 100 –ins_length 300 –exp_cov 40
+velvetg velvet31_output -min_contig_lgth 100 -ins_length 300 -exp_cov 40
 ```
 
 Now, we are going to perform sequence assembly with `velvet` using varying k-mer lengths of 59, 69, 79, and 109.
