@@ -21,6 +21,8 @@ Table of contents
 <!--te-->
 
 ## Prerequisites
+To fully benefit from these exercises, it is essential that you manually _type_ each exercises. Please avoid the temptation to copy and paste, as the purpose behind these exercises is to train your hands, brain, and mind in the fundamental skills of reading, writing, and comprehending code. By copying and pasting, you would be depriving yourself of the valuable learning experience these lessons provide.
+
 Before we begin, you should have a basic understanding of genomics and the concept of DNA sequencing. You should also be familiar with the command line and have access to a Unix-based operating system (such as Linux or macOS).
 
 ## Introduction
