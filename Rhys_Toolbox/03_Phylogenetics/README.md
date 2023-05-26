@@ -91,7 +91,7 @@ In this tutorial, we will learn how to use the CytB loci to identify and downloa
 | Species 5 |           |           |           |           |
 | and so on... |           |           |           |           |
 
-
+- Don't forget to download the FASTA (aligned sequences) for your 20 closest homologues
 
 ### Read _De Novo_ Assembly
 
