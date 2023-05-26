@@ -74,9 +74,9 @@ ls
 In this tutorial, we will learn how to use the CytB loci to identify and download the 20 closest homologues with full mitochondrial sequences to a unknown species. We will then construct a table that includes relevant information such as GenBank IDs, species names, and the level of homology.
 
 ##### Step 1: Searching for homologous mitochondrial sequences
-** Access the National Center for Biotechnology Information (NCBI) Nucleotide database, which can be found here: [https://www.ncbi.nlm.nih.gov/nuccore/?term=](https://www.ncbi.nlm.nih.gov/nuccore/?term=)
-** Search using the assigned species' GenBank Accession number or relevant identifier.
-** Locate the complete mitochondrial genome information for the assigned species.
+- Access the National Center for Biotechnology Information (NCBI) Nucleotide database, which can be found here: [https://www.ncbi.nlm.nih.gov/nuccore/?term=](https://www.ncbi.nlm.nih.gov/nuccore/?term=)
+- Search using the assigned species' GenBank Accession number or relevant identifier.
+- Locate the complete mitochondrial genome information for the assigned species.
 
 
 
