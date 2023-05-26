@@ -68,17 +68,18 @@ To confirm that both files are present in your current working directory, check 
 ls
 ```
 
-**The sequence data for an unknown cytochrome b is what we will be using today.**
+**The sequence data for an unknown cytochrome b (hint: class Mammalia and order Carnivora) is what we will be using today.**
 
 ### Identification and retrieval of closest homologues: cytochrome b loci analysis
 In this tutorial, we will learn how to use the CytB loci to identify and download the 20 closest homologues with full mitochondrial sequences to a unknown species. We will then construct a table that includes relevant information such as GenBank IDs, species names, and the level of homology.
 
-##### Step 1: Searching for homologous mitochondrial sequences
-- Access the National Center for Biotechnology Information (NCBI) Nucleotide database, which can be found here: [https://www.ncbi.nlm.nih.gov/nuccore/?term=](https://www.ncbi.nlm.nih.gov/nuccore/?term=)
-- Search using the assigned species' GenBank Accession number or relevant identifier.
-- Locate the complete mitochondrial genome information for the assigned species.
-
-
+##### Step 1: Searching for homologous sequences to our query
+- Access the National Center for Biotechnology Information (NCBI) Standard Nucleotide BLAST database, which can be found [here](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&BLAST_SPEC=GeoBlast&PAGE_TYPE=BlastSearch)
+- Upload your unknown Mammalia CytB sequence as the query sequence for a BLASTn search 
+- In this particular case, we will refrain from conducting a search within the conventional nucleotide collection (nr/nt). Instead, our focus will be on searching the RefSeq Genome database (refseq_genomes)
+- Set the search parameters to focus on the class Mammalia (taxid: 40674) and order Carnivora (taxid: 33554).
+- Performing a BLASTn Search
+- Retrieve the 20 closest homologues with full mitochondrial sequences to your unknown Mammalia CytB sequence
 
 
 
