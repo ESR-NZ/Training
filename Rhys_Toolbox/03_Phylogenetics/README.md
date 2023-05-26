@@ -29,8 +29,8 @@ Before we begin, you should have a basic understanding of genomics and the conce
 
 Welcome to the world of phylogenetics, where we explore the intricate relationships and evolutionary history of organisms. Phylogenetics allows us to reconstruct the Tree of Life, providing insights into how species are connected and evolve. In this tutorial, we will embark on an exciting journey to understand the principles, methods, and tools used in phylogenetics.
 
-![image](https://github.com/ESR-NZ/Training/assets/28285670/775fb46b-6121-4a29-8a04-e864a9e01364)
-**Figure. Phylogenetic relationships of _Chlamydia psittaci_ sequence type (ST)24 strains**. Image taken from [White et al. 2023](https://doi.org/10.1016/j.vetmic.2023.109704)
+![Phylogeny_explained](https://github.com/ESR-NZ/Training/assets/28285670/03c8c84b-de28-4dab-88b5-d742c0940874)
+**Figure. Phylogenetic relationships of _Chlamydia psittaci_ sequence type (ST)24 strains**. Image is adapted from [White et al. 2023](https://doi.org/10.1016/j.vetmic.2023.109704)
 
 ## Let's get started...
 
