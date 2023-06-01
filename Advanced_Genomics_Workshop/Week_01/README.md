@@ -14,6 +14,7 @@ Table of contents
       * [Understanding the prompt](#Understanding-the-prompt)
       * [Navigating the directory structure](#Navigating-the-directory-structure)
       * [File operations](#File-operations)
+      * [File viewing and text editors](#File-viewing-and-text-editors)
    * [Why have I learnt this?](#why-have-i-learnt-this)
    * [Final notes](#final-notes)
    * [Data availability](#data-availability)
@@ -130,6 +131,11 @@ The manual page typically includes a description of the command, its usage synta
 **(b) Why is it not recommended to use spaces in filenames?**<br>
 **(c) What `ls` flag can be used to classify items as directories, executable files, or links by appending `/`, `*` or `@` characters?**<br>
 
+#### Advanced Tips and Tricks
+- Use the `Tab` key for auto-completion. Start typing a command, file, or directory name, and then press `Tab` to have the command line complete it for you or show you possible options. Press the `up` and `down` arrow keys to navigate through your command history.
+- Use the `man` command followed by a command name to display the manual page for that command. The manual page provides detailed information and usage examples.
+- Learn about wildcards (e.g., `*` and `?`) to perform advanced file matching and manipulation.
+
 ### File operations
 We will explore various file operations that can be performed using command-line tools. These operations include moving files, copying files, concatenating files, removing directories and their contents, counting newlines/words/characters in a file, and viewing files without editing capabilities.
 
@@ -220,11 +226,13 @@ wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Wo
 **(iv) Create a new file named `TestFile.fasta` by concatenating two identical copies of the `C.pecorum_MLST.fasta` file**<br>
 **(v) To determine the number of sequences in `TestFile.fasta`, utilise the `wc` and less commands**<br>
 
-
 ##### Questions
 
 **(d) What is the size of the `SRR14141431.tar.gz` file in kilobytes?**<br>
 **(e) How many sequences does `TestFile.fasta` contain? (Hint: Be mindful of the newline count)**<br>
+
+### File viewing and text editors
+
 
 
 
