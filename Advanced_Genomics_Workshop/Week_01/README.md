@@ -9,10 +9,10 @@ Table of contents
 <!--ts-->
    * [Prerequisites](#prerequisites)
    * [Introduction](#introduction)
-      * [What is a SAM file?](#what-is-a-sam-file)
-      * [What is a BAM file?](#what-is-a-bam-file)
    * [Let's get started...](#lets-get-started)
-      * [How to view a SAM or BAM file](#how-to-view-a-sam-or-bam-file)
+      * [Opening the command line](#Opening-the-command-line)
+      * [Understanding the prompt](#Understanding-the-prompt)
+      * [Navigating the directory structure](Navigating-the-directory-structure)
    * [Why have I learnt this?](#why-have-i-learnt-this)
    * [Final notes](#final-notes)
    * [Data availability](#data-availability)
@@ -34,6 +34,7 @@ In this practical session, we aim to acquaint you with essential Linux/Unix comm
 ## Let's get started...
 By now, you should have become acquainted with the Basic Server Usage wiki page, accessible at the following link: [https://kscprod-bioman1.esr.cri.nz/wiki/index.php/Basic_Server_Usage_FAQ](https://kscprod-bioman1.esr.cri.nz/wiki/index.php/Basic_Server_Usage_FAQ)
 
+### Opening the command line
 To begin using [MobaXterm](http://kscprod-bioman1/wiki/index.php/MobaXterm), follow these steps:
 1) Launch MobaXterm
 2) After logging in, you will be directed to the Linux bash shell terminal
@@ -41,3 +42,102 @@ To begin using [MobaXterm](http://kscprod-bioman1/wiki/index.php/MobaXterm), fol
 
 It's important to note that only you and the Linux administrator have read-write, and execute permissions in your home directory. This means that only you and the administrator can create, modify, and delete files. However, other users have read permission to the files in your home directory. Hence, it is recommended to carry out your actual work in a shared location that is accessible to other members of your project group, rather than within your home directory.
 You can access all your programs and files once you're in the command line interface. This allows you to carry out various tasks, such as accessing, copying, moving, and deleting them.
+
+### Understanding the prompt
+Once the command line is open, you'll see a prompt indicating it's ready to receive commands. The prompt usually consists of text followed by a cursor awaiting your input. For example, on macOS and Linux, the prompt might be a dollar sign ($).
+
+### Navigating the directory structure
+We will learn how to navigate the directory structure using basic command-line tools. We will cover creating new directories, listing files in a directory, and changing directories.
+
+#### Creating Directories
+To create a new directory, you can use the `mkdir` command followed by the name of the directory. By default, the new directory will be created in your current working directory. Here's an example:
+
+```bash
+# Make a directory called week01:
+mkdir week01
+```
+
+To create a directory within another directory, you can specify the path to the parent directory and the name of the new directory. For example:
+```bash
+# Make a directory within the week01 directory, called seqs:
+mkdir week01/seqs
+```
+
+#### Listing files in a directory
+To list files in a directory, you can use the `ls` command. By default, it will list the files and directories in your current working directory. Here are a couple of useful variations of the ls command:
+
+```bash
+# List all the files and directories in the current working directory
+ls
+```
+
+```bash
+# List all the files and directories in the current working directory with detailed information, such as permissions, owner, size, and modification date
+ls -l
+```
+
+#### Changing Directories
+To change to a different directory, you can use the `cd` command followed by the path to the directory you want to navigate to. Here are a couple of examples:
+
+```bash
+# Change your current working directory to the week01 directory
+cd week01
+```
+
+```bash
+# Move up one level in the directory tree, from the current directory to its parent directory
+cd ..
+```
+
+```bash
+# Change your current working directory to the seqs directory within the week01 directory.
+cd week01/seqs
+```
+
+```bash
+# Move directly to your home directory
+cd
+```
+
+Remember that the path to a directory is relative to your current working directory. If you specify a relative path, it will be resolved starting from your current location.
+
+#### Checking the current working directory
+To determine the current working directory, you can use the `pwd` command. It stands for "print working directory". When you run this command, it will display the full path of your current directory. Here's an example:
+
+```bash
+# Print the absolute path of the directory you are currently in
+pwd
+```
+
+#### Accessing command manuals
+Command manuals, also known as "man pages", provide detailed information about various commands. To access a command's manual page, you can use the `man` command followed by the name of the command you want to learn about. For example:
+
+```bash
+# Display the manual page for the ls command, which lists files and directories
+man ls
+```
+
+The manual page typically includes a description of the command, its usage syntax, available options, and examples. You can navigate through the manual page using the arrow keys or the `Page Up` and `Page Down` keys. Press `q` to exit the manual page and return to the command prompt.
+
+
+
+
+
+
+
+
+
+
+
+
+Conclusion
+In this tutorial, we covered the basics of navigating the directory structure using the command line. You learned how to create new directories, list files in a directory, and change directories. These fundamental commands will help you navigate and organize your files efficiently.
+
+
+
+
+
+
+
+
+
