@@ -12,7 +12,7 @@ Table of contents
    * [Let's get started...](#lets-get-started)
       * [Opening the command line](#Opening-the-command-line)
       * [Understanding the prompt](#Understanding-the-prompt)
-      * [Navigating the directory structure](Navigating-the-directory-structure)
+      * [Navigating the directory structure](#Navigating-the-directory-structure)
    * [Why have I learnt this?](#why-have-i-learnt-this)
    * [Final notes](#final-notes)
    * [Data availability](#data-availability)
