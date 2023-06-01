@@ -54,12 +54,12 @@ Note: The data is ~20 MB. To download the data, please run these commands:
 
 ```bash
 # Download the reference assembly fasta file:
-wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Rhys_Toolbox/00_SAM_and_BAM_formats/Chlamydia_horse.fasta
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_03/Chlamydia_horse.fasta
 ```
 
 ```bash
 # Download the BAM format file:
-wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Rhys_Toolbox/00_SAM_and_BAM_formats/Chlamydia_mapped.bam
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_03/Chlamydia_mapped.bam
 ```
 
 You have been given two files: a read-mapping file in BAM format named `Chlamydia_mapped.bam` and a reference sequence in fasta format named `Chlamydia_horse.fasta`. To begin, create a directory called `mapping` and move both files into it. Afterwards, navigate to the `mapping` folder:
