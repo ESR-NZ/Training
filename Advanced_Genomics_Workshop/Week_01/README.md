@@ -125,11 +125,9 @@ If you haven't already, create a new directory called `week01`. Once the directo
 
 ##### Questions
 
-**(a) What is the absolute path to your home directory?
-
-**(b) Why is it not recommended to use spaces in filenames?
-
-**(c) What `ls` flag can be used to classify items as directories, executable files, or links by appending `/`, `*` or `@` characters?
+**(a) What is the absolute path to your home directory?**<br>
+**(b) Why is it not recommended to use spaces in filenames?**<br>
+**(c) What `ls` flag can be used to classify items as directories, executable files, or links by appending `/`, `*` or `@` characters?**<br>
 
 
 
