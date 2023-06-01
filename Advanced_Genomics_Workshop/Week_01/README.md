@@ -201,10 +201,6 @@ tail [-n <number_of_lines>] <filename>
 #### Activity 2
 **To complete the required tasks, follow the instructions below:**<br>
 **(i) Download two sequence data files as specified below**<br>
-**(ii) Once downloaded, ensure both files are copied to the designated `seqs/` directory**<br>
-**(iii) Verify the files present in your `seqs/` directory by listing them**<br>
-**(iv) Create a new file named `TestFile.fasta` by concatenating two identical copies of the `C.pecorum_MLST.fasta` file**<br>
-**(v) To determine the number of sequences in `TestFile.fasta`, utilise the `wc` and less commands**<br>
 
 ##### Getting the data
 To download the data, please run these commands:
@@ -218,6 +214,12 @@ wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Wo
 # Download the FASTA file:
 wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_01/SRR14141431.tar.gz
 ```
+
+**(ii) Once downloaded, ensure both files are copied to the designated `seqs/` directory**<br>
+**(iii) Verify the files present in your `seqs/` directory by listing them**<br>
+**(iv) Create a new file named `TestFile.fasta` by concatenating two identical copies of the `C.pecorum_MLST.fasta` file**<br>
+**(v) To determine the number of sequences in `TestFile.fasta`, utilise the `wc` and less commands**<br>
+
 
 ##### Questions
 
