@@ -51,7 +51,7 @@ Once the command line is open, you'll see a prompt indicating it's ready to rece
 ### Navigating the directory structure
 We will learn how to navigate the directory structure using basic command-line tools. We will cover creating new directories, listing files in a directory, and changing directories.
 
-#### Creating Directories
+#### Creating directories
 To create a new directory, you can use the `mkdir` command followed by the name of the directory. By default, the new directory will be created in your current working directory. Here's an example:
 
 ```bash
@@ -131,7 +131,7 @@ The manual page typically includes a description of the command, its usage synta
 **(b) Why is it not recommended to use spaces in filenames?**<br>
 **(c) What `ls` flag can be used to classify items as directories, executable files, or links by appending `/`, `*` or `@` characters?**<br>
 
-#### Advanced Tips and Tricks
+#### Advanced tips and tricks
 - Use the `Tab` key for auto-completion. Start typing a command, file, or directory name, and then press `Tab` to have the command line complete it for you or show you possible options. Press the `up` and `down` arrow keys to navigate through your command history.
 - Use the `man` command followed by a command name to display the manual page for that command. The manual page provides detailed information and usage examples.
 - Learn about wildcards (e.g., `*` and `?`) to perform advanced file matching and manipulation.
@@ -260,22 +260,21 @@ You have learned to use `velvet` and `spades` as they are popular and widely use
 
 ## Whakamihi! You did it!
 
-That's it for this tutorial on _de novo_ genome assembly using short-read sequence data! You have assembled your short-read sequence data into a draft genome using `velvet` and `spades`, and have successfully used `quast` and `checkm` to assess the quality metrics of your genome assemblies. If you have any further questions, feel free to ask.
+That's it for this tutorial on a crash course on the command line! You have assembled your short-read sequence data into a draft genome using `velvet` and `spades`, and have successfully used `quast` and `checkm` to assess the quality metrics of your genome assemblies. If you have any further questions, feel free to ask.
   
   ###### Final notes
 
-<sup> This tutorial uses example paired-end short-read sequencing data from our phylogenomic study of *Chlamydia psittaci* sequence type (ST)24. I invite you to read our publication if you find this data intriguing: <sup>
+<sup> This tutorial uses example short-read sequencing data from our phylogenomic study of *Chlamydia pecorum* sequence type (ST)23. I invite you to read our publication if you find this data intriguing: <sup>
 
-
-<sub> &emsp; **White RT**, Anstey SI, Kasimov V, Jenkins C, Devlin J, El-Hage C, Pannekoek Y, Legione AR, Jelocnik M. One clone to rule them all: Culture-independent genomics of *Chlamydia psittaci* from equine and avian hosts in Australia. *Microbial Genomics* 2022;8:000888 doi: [https://doi.org/10.1099/mgen.0.000888](https://doi.org/10.1099/mgen.0.000888)<sub> 
+<sub> &emsp; Jelocnik M, **White RT**, Clune T, O’Connell J, Foxwell J, Hair S, Besier S, Tom L, Phillips N, Robbins A, Bogema D. Molecular characterisation of the Australian and New Zealand livestock *Chlamydia pecorum* strains confirms novel but clonal ST23 in association with ovine foetal loss. *Veterinary Microbiology*. 2023:109774 doi: [https://doi.org/10.1016/j.vetmic.2023.109774](https://doi.org/10.1016/j.vetmic.2023.109774)<sub> 
 
 ###### Data availability
 
-<sub> Sequence read data has been submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) under BioProject [PRJNA798154](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA798154) <sub>
+<sub> Sequence read data has been submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) under BioProject [PRJNA719674](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA719674) <sub>
 
-<sub> Raw Illumina sequence read data have been deposited to the NCBI SRA under the accession numbers [SRR17649252 to SRR17649264](https://www.ncbi.nlm.nih.gov/sra/?term=https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA798154) <sub>
+<sub> Raw Illumina sequence read data have been deposited to the NCBI SRA under the accession numbers [SRS8634730 to SRS8634733](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA719674) <sub>
 
-<sub> In addition, the high-quality assembly has been deposited to the NCBI GenBank database under the accession numbers [JAKGCA000000000 to JAKGCM000000000](https://www.ncbi.nlm.nih.gov/sra/?term=https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA798154) <sub> 
+<sub> In addition, the high-quality assembly has been deposited to the NCBI GenBank database under the accession numbers [JAGKIP000000000 to JAGKIQ000000000](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA719674) <sub> 
 
 
 
