@@ -123,7 +123,7 @@ The manual page typically includes a description of the command, its usage synta
 If you haven't already, create a new directory called `week01`. Once the directory is created, enter into it and confirm that the change of directories was successful by checking the current working directory. Next, create a new subdirectory named `seqs`. After creating `seqs`, navigate back to your home directory using both absolute and relative paths.
 
 
-#### Questions
+##### Questions
 
 **(a) What is the absolute path to your home directory?
 **(b) Why is it not recommended to use spaces in filenames?
