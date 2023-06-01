@@ -121,7 +121,7 @@ man ls
 The manual page typically includes a description of the command, its usage syntax, available options, and examples. You can navigate through the manual page using the arrow keys or the `Page Up` and `Page Down` keys. Press `q` to exit the manual page and return to the command prompt.
 
 #### Activity 1
-If you haven't already, create a new directory called `week01`. Once the directory is created, enter into it and confirm that the change of directories was successful by checking the current working directory. Next, create a new subdirectory named `seqs`. After creating `seqs`, navigate back to your home directory using both absolute and relative paths.
+**If you haven't already, create a new directory called `week01`. Once the directory is created, enter into it and confirm that the change of directories was successful by checking the current working directory. Next, create a new subdirectory named `seqs`. After creating `seqs`, navigate back to your home directory using both absolute and relative paths.**
 
 
 ##### Questions
