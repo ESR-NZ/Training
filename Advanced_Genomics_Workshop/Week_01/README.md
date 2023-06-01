@@ -13,6 +13,7 @@ Table of contents
       * [Opening the command line](#Opening-the-command-line)
       * [Understanding the prompt](#Understanding-the-prompt)
       * [Navigating the directory structure](#Navigating-the-directory-structure)
+      * [File operations](#File-operations)
    * [Why have I learnt this?](#why-have-i-learnt-this)
    * [Final notes](#final-notes)
    * [Data availability](#data-availability)
@@ -129,8 +130,71 @@ If you haven't already, create a new directory called `week01`. Once the directo
 **(b) Why is it not recommended to use spaces in filenames?**<br>
 **(c) What `ls` flag can be used to classify items as directories, executable files, or links by appending `/`, `*` or `@` characters?**<br>
 
+### File operations
+We will explore various file operations that can be performed using command-line tools. These operations include moving files, copying files, concatenating files, removing directories and their contents, counting newlines/words/characters in a file, and viewing files without editing capabilities.
 
+#### Move files (including renaming)
+To move files or folders from one location to another, use the `mv` command followed by the source path and filename, and then the destination. For example:
+```bash
+mv <source path and filename> <destination>
+```
 
+To move a file or folder to the current directory, use the `.` (dot) as the destination. For example:
+
+```bash
+# Move a file to the current directory
+mv <source path and filename> .
+```
+
+#### Copy files
+To copy a file from one location to another, use the `cp` command followed by the source and destination. For example:
+
+```bash
+cp <source path and filename> <destination>
+```
+
+#### Concatenate files
+To concatenate files and print the output to the standard output (`STDOUT`), use the `cat` command followed by the filenames. For example:
+
+```bash
+cat file1 file2 file3
+
+To concatenate files and save the output as a new file, use the redirection operator `>` followed by the output filename. For example:
+
+```bash
+# Concatenate files and save the output as a new file
+cat file1 file2 file3 > outputfile
+
+#### Remove a directory and its contents
+Be cautious while using the following command, as it deletes a directory and all its contents without a second chance.
+
+```bash
+rm -r <directory>
+```
+
+#### Count newlines, words, or characters in a file
+To count the number of newline characters, words, and characters in a file, use the `wc` command followed by the filename.
+
+```bash
+wc <filename>
+```
+
+#### View files without editing capability
+To view a file without editing capabilities, use the `less` command followed by the filename. This presents a read-only version of the file.
+
+```php
+less <filename>
+```
+
+While viewing the file, you can navigate to the bottom using `G`, navigate to the top using `1G`, search using `/`, and exit using `q`. Additionally, you can use the `spacebar` to page down and `b` to page up.
+
+####  Show first and last lines of a file
+To display the first and last lines of a file, use the `head` and `tail` commands, respectively. You can specify the number of lines to display using the `-n` flag.
+
+``` php
+head [-n <number_of_lines>] <filename>
+tail [-n <number_of_lines>] <filename>
+```
 
 
 
@@ -143,7 +207,7 @@ If you haven't already, create a new directory called `week01`. Once the directo
 Conclusion
 In this tutorial, we covered the basics of navigating the directory structure using the command line. You learned how to create new directories, list files in a directory, and change directories. These fundamental commands will help you navigate and organize your files efficiently.
 
-
+That's it! You have now learned several useful file operations using command-line tools. Practice these commands to become familiar with their functionality and expand your proficiency with managing files and directories through the command line interface.
 
 
   ## Why have I learnt this?
