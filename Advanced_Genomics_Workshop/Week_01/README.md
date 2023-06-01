@@ -64,7 +64,7 @@ mkdir week01/seqs
 ```
 
 #### Listing files in a directory
-To list files in a directory, you can use the `ls` command. By default, it will list the files and directories in your current working directory. Here are a couple of useful variations of the ls command:
+To list files in a directory, you can use the `ls` command. By default, it will list the files and directories in your current working directory. Here are a couple of useful variations of the `ls` command:
 
 ```bash
 # List all the files and directories in the current working directory
@@ -119,8 +119,7 @@ man ls
 
 The manual page typically includes a description of the command, its usage syntax, available options, and examples. You can navigate through the manual page using the arrow keys or the `Page Up` and `Page Down` keys. Press `q` to exit the manual page and return to the command prompt.
 
-
-
+##### Activity 1
 
 
 
