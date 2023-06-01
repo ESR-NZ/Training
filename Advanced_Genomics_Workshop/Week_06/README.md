@@ -1,7 +1,7 @@
 #### Author: Rhys White ([@RhysTWhite](https://twitter.com/RhysTWhite))
 #### Affiliations: Institute of Environmental Science and Research - ESR
 
-# Rhys-toring the Genome through _de novo_ assembly: a tutorial on assembling a genome using short-read sequence data
+# Advanced Genomic Insights Workshop Week 06: a tutorial on assembling a genome using short-read sequence data
 
 Table of contents
 =================
