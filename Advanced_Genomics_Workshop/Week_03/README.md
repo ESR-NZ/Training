@@ -1,7 +1,7 @@
 #### Author: Rhys White ([@RhysTWhite](https://twitter.com/RhysTWhite))
 #### Affiliations: Institute of Environmental Science and Research - ESR
 
-# Rhys' roadmap to SAM: a tutorial for navigating read-mapping files
+# Advanced Genomic Insights Workshop Week 03: a tutorial for navigating read-mapping files
 
 Table of contents
 =================
