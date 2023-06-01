@@ -158,12 +158,14 @@ To concatenate files and print the output to the standard output (`STDOUT`), use
 
 ```bash
 cat file1 file2 file3
+```
 
 To concatenate files and save the output as a new file, use the redirection operator `>` followed by the output filename. For example:
 
 ```bash
 # Concatenate files and save the output as a new file
 cat file1 file2 file3 > outputfile
+```
 
 #### Remove a directory and its contents
 Be cautious while using the following command, as it deletes a directory and all its contents without a second chance.
