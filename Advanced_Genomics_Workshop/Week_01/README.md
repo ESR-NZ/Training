@@ -55,13 +55,13 @@ We will learn how to navigate the directory structure using basic command-line t
 To create a new directory, you can use the `mkdir` command followed by the name of the directory. By default, the new directory will be created in your current working directory. Here's an example:
 
 ```bash
-# Make a directory called week01:
+# Make a directory called week01
 mkdir week01
 ```
 
 To create a directory within another directory, you can specify the path to the parent directory and the name of the new directory. For example:
 ```bash
-# Make a directory within the week01 directory, called seqs:
+# Make a directory within the week01 directory, called seqs
 mkdir week01/seqs
 ```
 
