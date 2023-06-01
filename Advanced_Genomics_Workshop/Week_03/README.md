@@ -273,11 +273,11 @@ Here are some additional things to keep in mind when working with CIGAR strings:
 
 ## Why have I learnt this?
 
-Accurately identifying single-nucleotide variants (SNVs), insertions and deletions (indels), and structural genomic variants (SVs) is a challenging undertaking. Differentiating between genuine variant positions and errors introduced during sequencing or mapping is a daunting challenge when analysing sequence read-mapping data. 
+By following this tutorial, you have gained practical knowledge and skills in working with SAM and BAM files, interpreting read mapping, and using `samtools` for genomic analyses. Accurately identifying single-nucleotide variants (SNVs), insertions and deletions (indels), and structural genomic variants (SVs) is a challenging undertaking. Differentiating between genuine variant positions and errors introduced during sequencing or mapping is a daunting challenge when analysing sequence read-mapping data. 
 
 ## Whakamihi! You did it!
 
-That's it for this tutorial on SAM files! If you have any further questions, feel free to ask.
+That's it for this tutorial on SAM files! This tutorial briefly introduces using the SAM file format and the `samtools` tool for read-mapping in bioinformatics. It covers the basics of SAM and BAM files, including their structure and purpose, and guides readers through viewing and extracting information from these files. If you have any further questions, feel free to ask.
 
 
 ###### Final notes
