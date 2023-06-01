@@ -212,12 +212,12 @@ tail [-n <number_of_lines>] <filename>
 To download the data, please run these commands:
 
 ```bash
-# Download the FASTA file:
+# Download the first FASTA file:
 wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_01/C.pecorum_MLST.fasta
 ```
 
 ```bash
-# Download the FASTA file:
+# Download the second FASTA file:
 wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_01/SRR14141431.tar.gz
 ```
 
@@ -232,36 +232,116 @@ wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Wo
 **(e) How many sequences does `TestFile.fasta` contain? (Hint: Be mindful of the newline count)**<br>
 
 ### File viewing and text editors
+Various commands and techniques exist for file viewing, text editing, searching within files, and compressing/archiving files using the command line interface. These commands are commonly used in Unix-based systems. They can enhance your productivity when working with files and directories. 
+
+#### File viewing and text editors
+##### Text editors
+Use the Vim editor to open a file for editing or create a new file. For excample:
+
+```bash
+# Open a file for editing or create a new file
+vim <filename>
+```
+
+When in the Vim text editor, press the `i` key to enter the insert mode and start editing the file. To save and exit Vim, press the `Escape` key to enter command mode, then type `:wq` and hit `Enter`.
+
+Nano is a slightly easier-to-use text editor than Vim. It's recommended for beginners:
+
+```bash
+# Open a file for editing or create a new file
+nano <filename>
+```
+
+When in the nano text editor, make your changes, and then press `Ctrl` `+` `O` to save the file and `Ctrl` `+` `X` to exit nano.
+
+#### Searching in and modifying files
+Use grep to search for lines in a file that match a specific pattern:
+
+```bash
+grep <search-pattern> <filename>
+```
+
+This command will display all the lines containing the pattern on the standard output (`STDOUT`). Replace `<search-pattern>` with the actual pattern you want to search for.
+
+```bash
+# finds all the lines in a file that do not contain the specified pattern
+grep -v <search-pattern> <filename>
+```
+
+```bash
+# Count the number of lines in a file that contain a specific pattern
+grep -c <search-pattern> <filename>
+```
+
+```bash
+# Find lines in a file that contain any pattern from a list of patterns specified in the 'list' file
+grep -f list <filename>
+```
+
+Use  `sed` to perform substitutions within a file:
+
+```bash
+sed 's;patterntoreplace;replacement;g' <filename> > <outputfile>
+```
+
+This command replaces the first occurrence of 'patterntoreplace' with 'replacement' in the file and saves the output to `outputfile`. You can modify the pattern and replacement strings to suit your needs.
+
+#### Compression and archiving
+Compress a file using `gzip`, which produces a new file with the `.gz` extension. The original file will be replaced with the compressed version:
+```bash
+# Compress a file with gzip
+gzip <filename>
+```
+
+Uncompress a file that has been compressed using gzip. This command will restore the original file from its compressed version: 
+```bash
+# Uncompress a file with gzip
+gunzip <filename>
+```
+
+Create a tar archive named `archive.tar.gz` containing 'filename': 
+```bash
+# Compress an entire directory or a single file
+tar -czvf archive.tar <filename>
+```
+
+Here’s what those switches actually mean:
+
+-c: Create an archive<br>
+-z: Compress the archive with gzip<br>
+-v: Display progress in the terminal while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but it’s helpful<br>
+-f: Allows you to specify the filename of the archive<br>
+
+Extract files from a tar archive named 'archive.tar.gz'
+```bash
+# Extract an archive
+tar -xzvf archive.tar.gz
+```
+
+#### Activity 3
+To uncompress the file `SRR14141431.tar.gz`, employ the `grep` command to extract all the lines containing fasta headers and store them in a text file. Then, utilise `sed` to prepend your name to the beginning of each line and save the modified output to a different file. Finally, open the file in a text editor or utilize commands like `head`, `tail`, or `less` to confirm that your changes were successfully applied.
 
 
+##### Cheat sheet:
+You can find a useful Unix command-line cheat sheet by following this step. Go through the list and mark off the commands you have utilised today. If you have completed all of today's activities, take this opportunity to explore additional commands from the cheat sheet.
 
+To download the cheat sheet, please run this command:
 
-
-
-
-
-
-
-
-
-
-
-Conclusion
-In this tutorial, we covered the basics of navigating the directory structure using the command line. You learned how to create new directories, list files in a directory, and change directories. These fundamental commands will help you navigate and organize your files efficiently.
-
-That's it! You have now learned several useful file operations using command-line tools. Practice these commands to become familiar with their functionality and expand your proficiency with managing files and directories through the command line interface.
-
+```bash
+# Download the cheat sheet file:
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_01/Unix_Linux_CheatSheet.pdf
+```
 
   ## Why have I learnt this?
 
-You have learned to use `velvet` and `spades` as they are popular and widely used _de novo_ genome assembly tools that handle short-read sequence data. They provide different strategies for contig assembly, and it is helpful to be familiar with multiple assembly tools to compare the quality of assemblies generated by each.
-
-`quast` and `checkm` are commonly used tools for assessing the quality of genome assemblies. `quast` allows you to compare the accuracy and completeness of different assemblies, while `checkm` assesses the completeness and contamination of genome assemblies by comparing the assembled contigs to a set of reference marker genes. These tools help ensure that the genome assembly is high quality and can be used for downstream analyses.
+You have learned this information to comprehensively understand command-line basics and how to perform everyday tasks using the command line interface. The tutorial guides essential Linux/Unix commands and their effective utilisation. By acquiring these skills, you can effectively use the command line interface for file manipulation, navigation, and text editing tasks. In addition, this knowledge is valuable for working with command line tools, scripting, and bioinformatics analyses.
 
 ## Whakamihi! You did it!
 
-That's it for this tutorial on a crash course on the command line! You have assembled your short-read sequence data into a draft genome using `velvet` and `spades`, and have successfully used `quast` and `checkm` to assess the quality metrics of your genome assemblies. If you have any further questions, feel free to ask.
-  
+That's it for this tutorial on a crash course on the command line! You've comprehensively understood command-line basics and learned various tasks using command-line tools. In addition, by practising exercises and familiarising yourself with Linux/Unix commands, you've honed your skills in navigating directories, managing files, counting lines/words/characters, and more. You've also discovered advanced tips like tab auto-completion, accessing command manuals, and using wildcards for file manipulation. These techniques boost productivity and efficiency.
+
+Remember, mastery of the command line takes practice. If you have any further questions, feel free to ask.
+
   ###### Final notes
 
 <sup> This tutorial uses example short-read sequencing data from our phylogenomic study of *Chlamydia pecorum* sequence type (ST)23. I invite you to read our publication if you find this data intriguing: <sup>
