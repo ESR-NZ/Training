@@ -91,7 +91,7 @@ cd ..
 ```
 
 ```bash
-# Change your current working directory to the seqs directory within the week01 directory.
+# Change your current working directory to the seqs directory within the week01 directory
 cd week01/seqs
 ```
 
