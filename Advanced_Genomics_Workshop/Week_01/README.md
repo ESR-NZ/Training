@@ -32,7 +32,12 @@ The command line, also referred to as the terminal or shell, is a robust tool fo
 In this practical session, we aim to acquaint you with essential Linux/Unix commands and offer guidance on effectively utilising command line tools.
 
 ## Let's get started...
+By now, you should have become acquainted with the Basic Server Usage wiki page, accessible at the following link: [https://kscprod-bioman1.esr.cri.nz/wiki/index.php/Basic_Server_Usage_FAQ](https://kscprod-bioman1.esr.cri.nz/wiki/index.php/Basic_Server_Usage_FAQ)
 
+To begin using [MobaXterm](http://kscprod-bioman1/wiki/index.php/MobaXterm), follow these steps:
+1) Launch MobaXterm
+2) After logging in, you will be directed to the Linux bash shell terminal
+#0 By default, you will be in your home directory (`/home/username`). This directory is your central hub for file analysis, storage, and installing relevant packages and libraries for your chosen tools.
 
-
-https://kscprod-bioman1.esr.cri.nz/wiki/index.php/Basic_Server_Usage_FAQ
+It's important to note that only you and the Linux administrator have read-write, and execute permissions in your home directory. This means that only you and the administrator can create, modify, and delete files. However, other users have read permission to the files in your home directory. Hence, it is recommended to carry out your actual work in a shared location that is accessible to other members of your project group, rather than within your home directory.
+You can access all your programs and files once you're in the command line interface. This allows you to carry out various tasks, such as accessing, copying, moving, and deleting them.
