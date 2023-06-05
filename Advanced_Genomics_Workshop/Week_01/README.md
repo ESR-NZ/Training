@@ -52,7 +52,7 @@ Once the command line is open, you'll see a prompt indicating it's ready to rece
 We will learn how to navigate the directory structure using basic command-line tools. We will cover creating new directories, listing files in a directory, and changing directories.
 
 #### Creating directories
-To create a new directory, you can use the `mkdir` command followed by the name of the directory. By default, the new directory will be created in your current working directory. Here's an example:
+To create a new directory, you can use the `mkdir` command (make directory) followed by the name of the directory. By default, the new directory will be created in your current working directory. Here's an example:
 
 ```bash
 # Make a directory called week01
@@ -66,7 +66,7 @@ mkdir week01/seqs
 ```
 
 #### Listing files in a directory
-To list files in a directory, you can use the `ls` command. By default, it will list the files and directories in your current working directory. Here are a couple of useful variations of the `ls` command:
+To list files in a directory, you can use the `ls` command (list). By default, it will list the files and directories in your current working directory. Here are a couple of useful variations of the `ls` command:
 
 ```bash
 # List all the files and directories in the current working directory
@@ -79,7 +79,7 @@ ls -l
 ```
 
 #### Changing Directories
-To change to a different directory, you can use the `cd` command followed by the path to the directory you want to navigate to. Here are a couple of examples:
+To change to a different directory, you can use the `cd` command (change directory) followed by the path to the directory you want to navigate to. Here are a couple of examples:
 
 ```bash
 # Change your current working directory to the week01 directory
@@ -140,7 +140,7 @@ The manual page typically includes a description of the command, its usage synta
 We will explore various file operations that can be performed using command-line tools. These operations include moving files, copying files, concatenating files, removing directories and their contents, counting newlines/words/characters in a file, and viewing files without editing capabilities.
 
 #### Move files (including renaming)
-To move files or folders from one location to another, use the `mv` command followed by the source path and filename, and then the destination. For example:
+To move files or folders from one location to another, use the `mv` command (move) followed by the source path and filename, and then the destination. For example:
 ```bash
 mv <source path and filename> <destination>
 ```
@@ -153,14 +153,14 @@ mv <source path and filename> .
 ```
 
 #### Copy files
-To copy a file from one location to another, use the `cp` command followed by the source and destination. For example:
+To copy a file from one location to another, use the `cp` command (copy) followed by the source and destination. For example:
 
 ```bash
 cp <source path and filename> <destination>
 ```
 
 #### Concatenate files
-To concatenate files and print the output to the standard output (`STDOUT`), use the `cat` command followed by the filenames. For example:
+To concatenate files and print the output to the standard output (`STDOUT`), use the `cat` command (concatenate) followed by the filenames. For example:
 
 ```bash
 cat file1 file2 file3
@@ -181,14 +181,14 @@ rm -r <directory>
 ```
 
 #### Count newlines, words, or characters in a file
-To count the number of newline characters, words, and characters in a file, use the `wc` command followed by the filename.
+To count the number of newline characters, words, and characters in a file, use the `wc` command (word count) followed by the filename.
 
 ```bash
 wc <filename>
 ```
 
 #### View files without editing capability
-To view a file without editing capabilities, use the `less` command followed by the filename. This presents a read-only version of the file.
+To view a file without editing capabilities, use the `less` command (a terminal pager program) followed by the filename. This presents a read-only version of the file.
 
 ```php
 less <filename>
@@ -255,7 +255,7 @@ nano <filename>
 When in the nano text editor, make your changes, and then press `Ctrl` `+` `O` to save the file and `Ctrl` `+` `X` to exit nano.
 
 #### Searching in and modifying files
-Use grep to search for lines in a file that match a specific pattern:
+Use `grep` (global regular expression print) to search for lines in a file that match a specific pattern:
 
 ```bash
 grep <search-pattern> <filename>
@@ -278,7 +278,7 @@ grep -c <search-pattern> <filename>
 grep -f list <filename>
 ```
 
-Use  `sed` to perform substitutions within a file:
+Use  `sed` (Stream EDitor) to perform substitutions within a file:
 
 ```bash
 sed 's;patterntoreplace;replacement;g' <filename> > <outputfile>
