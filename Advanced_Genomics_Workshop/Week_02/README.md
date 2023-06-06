@@ -132,6 +132,37 @@ chmod +x script.sh
 ```
 
 ### Text manipulation basics
+Next, we will explore three essential commands for text file manipulation: `cut`, `sort`, and `uniq`. These commands are commonly used in Unix-based systems and provide powerful functionalities to extract, sort, and remove duplicates from text files. Additionally, we will briefly discuss file redirection using the `>` and `>>` redirection operators and the pipe `|` operator to connect commands.
+
+#### The cut command
+The cut command allows you to extract specific sections or fields from a file based on a specified delimiter. Here’s the basic syntax:
+
+```bash
+# Basic cut command
+cut -f <field(s)> -d <delimiter> <filename>
+```
+The `-f` option specifies the field or column number(s) you want to extract
+The `-d` option specifies the delimiter used in the file
+
+#### The sort command
+The sort command is used to sort the lines of a text file. It provides options to control the sorting behaviour. Here's the basic syntax:
+
+```bash
+# Basic cut command
+sort <filename>
+```
+
+- By default, the sort command performs a lexicographical sort in ascending order
+
+Options:
+- `-n`: Sorts lines in numeric order.
+- `-r`: Sorts lines in reverse order (descending)
+- `-u`: Outputs only the first occurrence of each line (removes duplicates)
+
+
+
+
+
 
 
 
