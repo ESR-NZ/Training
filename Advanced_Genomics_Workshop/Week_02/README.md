@@ -214,10 +214,95 @@ To show only the unique lines of `mytable.txt`, we can use the `uniq` command.<b
 Regular expressions, often called regex or regexp, are patterns used for matching and manipulating text. They provide a concise and flexible way to search, extract, and replace specific patterns of characters within a larger text. You can use regular expressions in various programming languages and tools, such as Python, JavaScript, Perl, and many others. They are widely used for tasks like data validation, parsing, search and replace operations, and text manipulation. Regular expressions are supported by various Linux tools, including `grep`, `sed`, `awk`, and others. In this tutorial, we will cover the basics of regular expressions and how to use them in Linux.
 
 ## Let's get started...
+#### Basic concepts
+Regular expressions are incredibly flexible and powerful tools for text pattern matching. You can use them in various programming languages, text editors, and command-line tools to perform complex searches and transformations on text data.<br> 
+Let's start with some common patterns and their meanings:
+  
+The dot (`.`) matches any character.<br>
+**Example**: The pattern `p.t` matches "pat", "pot", "pit", and so on...
+
+Square brackets `[]` allow you to specify a range of characters.<br>
+`[ABC]` matches either "A", "B", or "C"<br>
+`[abc]` matches either "a", "b", or "c"<br>
+`[A-Z]` matches any capital letter<br>
+`[a-z]` matches any lowercase letter<br>
+`[A-Za-z]` matches any letter, regardless of case<br>
+`[0-9]` matches any digit
+
+The pipe character (`|`) serves as an "OR" operator, allowing you to specify multiple alternatives for matching.<br>
+**Example**: The pattern `[cat|dog]` matches either "cat" or "dog".
+  
+Adding the `^` modifier at the beginning of a pattern negates the match.<br>
+**Example**: The pattern `[^0-9]` matches any character that is not a digit.
+
+#### Now let's explore modifiers that allow you to control the number of matches
+
+The question mark (`?`) makes the preceding item optional (matches 0 or 1 times).<br>
+**Example**: The pattern `colou?r` matches both "color" and "colour".
+
+The plus sign (`+`) makes the preceding item greedy (matches 1 or more times).<br>
+**Example**: The pattern `go+d` matches "god", "good", "gooood", and so on.
+
+The asterisk (`*`) is a combination of the plus and question mark (matches 0 or more times).<br>
+**Example**: The pattern `g*d` matches "gd", "god", "good", "gooood", and so on.
+
+##### Curly brackets (`{}`) allow you to specify an exact number of matches
+
+`{n}` matches exactly "n" times.<br>
+**Example**: The pattern `go{2}d` matches "good" but not "god" or "gd".
+
+`{n,}` matches "n" or more times.<br>
+**Example**: The pattern `go{2,}d` matches "good", "gooood", and so on.
+
+`{n,m}` matches between "n and m" times.<br>
+**Example**: The pattern `go{2,4}d` matches "good", "gooood", and "goooood", but not "god" or "gd".
+
+##### Finally, let's discuss anchors to match specific parts of a line
+
+The caret (`^`) matches the beginning of a line.<br>
+**Example**: The pattern `^Start` matches lines that start with "Start".
+
+The dollar sign (`$`) matches the end of a line.<br>
+**Example**: The pattern `end$` matches lines that end with "end".
+
+**Remember, if you want to interpret a special character literally, you can use the backslash (`\`) to remove its special meaning. For example, `$` matches an actual dollar sign, not the end of a line.**
+
+Take a look at this comprehensive regex [cheatsheet](https://ryanstutorials.net/linuxtutorial/cheatsheetgrep.php), which not only covers the mentioned information but also provides additional details in a user-friendly format. If you're interested in delving deeper, you can also explore other online resources for more examples.  
+  
 ### Basic regular expressions
+We will focus on using `egrep` and `sed` commands for exploring how regular expressions work and how they can be used to search for specific patterns in text files. Although it's important to note that regex is widely used in various other commands and programming languages.
+  
+  Using regular expressions with egrep:
+The egrep command is a powerful tool that enables us to search for patterns within text files using regular expressions. To use egrep, follow these steps:
 
+Open your terminal or command prompt.
+Navigate to the directory containing the text file you want to search.
+Run the following command:
+  egrep "pattern" filename
+Replace "pattern" with the regular expression you want to search for, and "filename" with the name of the text file you want to search in.
 
+For example, let's say we have a text file called "example.txt" containing various lines of text. If we want to find all lines that contain the word "apple," we can use the following command:
+  
+ egrep will display all lines in "example.txt" that match the given pattern.
 
+Using regular expressions with sed:
+The sed command, short for stream editor, is another useful tool for manipulating text using regular expressions. It allows us to search for patterns and perform actions such as substitution or deletion. To use sed with regular expressions, follow these steps:
+
+Open your terminal or command prompt.
+Navigate to the directory containing the text file you want to manipulate.
+Run the following command:
+  sed 's/pattern/replacement/' filename
+
+  Replace "pattern" with the regular expression you want to search for, and "replacement" with the desired text to replace the matched pattern. Finally, replace "filename" with the name of the text file you want to manipulate.
+
+For instance, let's assume we have a text file called "data.txt" containing several lines. If we want to replace all occurrences of the word "cat" with "dog," we can use the following command:
+  
+ sed 's/cat/dog/' data.txt
+ 
+  sed will modify "data.txt" by replacing every instance of "cat" with "dog" and display the updated text.
+
+Remember that regular expressions offer a wide range of possibilities, allowing for complex pattern matching and manipulation. By mastering them, you'll gain a powerful toolset for working with text in various contexts, including scripting, programming, and data processing. So dive in, experiment, and unlock the full potential of regular expressions!
+  
 
 ### sed stream editing essentials
 
