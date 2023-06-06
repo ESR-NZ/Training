@@ -11,10 +11,9 @@ Table of contents
    * [Introduction](#introduction)
    * [Let's get started...](#lets-get-started)
       * [File permissions](#File-permissions)
-      * [Basic text manipulation](#Basic-text-manipulation)
-      * [Navigating the directory structure](#Navigating-the-directory-structure)
-      * [File operations](#File-operations)
-      * [File viewing and text editors](#File-viewing-and-text-editors)
+      * [Text manipulation basics](#Text-manipulation-basics)
+      * [Basic regular expressions](#Basic-regular-expressions)
+      * [sed stream editing essentials](#sed-stream-editing-essentials)
    * [Why have I learnt this?](#why-have-i-learnt-this)
    * [Final notes](#final-notes)
    * [Data availability](#data-availability)
@@ -132,12 +131,46 @@ When working with shell scripts, you might need to make them executable before r
 chmod +x script.sh
 ```
 
-### Basic text manipulation
+### Text manipulation basics
+
+
+
+
+### Basic regular expressions
+
+
+
+
+### sed stream editing essentials
 
 
 
 
 
+
+  ## Why have I learnt this?
+
+You have learned this information to comprehensively understand command-line basics and how to perform everyday tasks using the command line interface. The tutorial guides essential Linux/Unix commands and their effective utilisation. By acquiring these skills, you can effectively use the command line interface for file manipulation, navigation, and text editing tasks. In addition, this knowledge is valuable for working with command line tools, scripting, and bioinformatics analyses.
+
+## Whakamihi! You did it!
+
+That's it for this tutorial on a crash course on the command line! You've comprehensively understood command-line basics and learned various tasks using command-line tools. In addition, by practising exercises and familiarising yourself with Linux/Unix commands, you've honed your skills in navigating directories, managing files, counting lines/words/characters, and more. You've also discovered advanced tips like tab auto-completion, accessing command manuals, and using wildcards for file manipulation. These techniques boost productivity and efficiency.
+
+Remember, mastery of the command line takes practice. If you have any further questions, feel free to ask.
+
+  ###### Final notes
+
+<sup> This tutorial uses example short-read sequencing data from our phylogenomic study of *Chlamydia pecorum* sequence type (ST)23. I invite you to read our publication if you find this data intriguing: <sup>
+
+<sub> &emsp; Jelocnik M, **White RT**, Clune T, O’Connell J, Foxwell J, Hair S, Besier S, Tom L, Phillips N, Robbins A, Bogema D. Molecular characterisation of the Australian and New Zealand livestock *Chlamydia pecorum* strains confirms novel but clonal ST23 in association with ovine foetal loss. *Veterinary Microbiology*. 2023:109774 doi: [https://doi.org/10.1016/j.vetmic.2023.109774](https://doi.org/10.1016/j.vetmic.2023.109774)<sub> 
+
+###### Data availability
+
+<sub> Sequence read data has been submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) under BioProject [PRJNA719674](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA719674) <sub>
+
+<sub> Raw Illumina sequence read data have been deposited to the NCBI SRA under the accession numbers [SRS8634730 to SRS8634733](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA719674) <sub>
+
+<sub> In addition, the high-quality assembly has been deposited to the NCBI GenBank database under the accession numbers [JAGKIP000000000 to JAGKIQ000000000](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA719674) <sub> 
 
 
 
