@@ -280,7 +280,7 @@ egrep "pattern" <filename>
 ```  
 
 #### Activity 2
-<Rhys to do>
+Rhys to do
   
 
   
@@ -340,7 +340,7 @@ This command will execute `sed`, process the contents of `<inputfile>`, and save
 In case you have a never-ending stream of text, it's essential to know how to terminate the `sed` command. You can use the `CTRL-C` shortcut to stop the command execution and return to the command prompt.
 
   
- <Rhys to finish>  
+ Rhys to finish
   
   
 ```bash
