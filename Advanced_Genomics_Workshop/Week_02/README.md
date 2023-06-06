@@ -303,15 +303,6 @@ wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Wo
 **(b) Which command, using regular expressions, can be used to match all headers containing "length=xxx," where xxx falls within the range of 140 to 145?**<br>
 
 
-
-
-  
-  
-  
-  
-  
- 
-
 ### sed stream editing essentials
 The `sed` command, short for stream editor, is another useful tool for manipulating text using regular expressions. Like `grep`, the `sed` command allows us to search for patterns and perform actions such as substitution or deletion. Let's dive into the different usage scenarios and how to handle large outputs effectively.
   
@@ -361,23 +352,69 @@ This command will execute `sed`, process the contents of `<inputfile>`, and save
 ##### Handling never-ending text streams
 In case you have a never-ending stream of text, it's essential to know how to terminate the `sed` command. You can use the `CTRL-C` shortcut to stop the command execution and return to the command prompt.
 
-  
- Rhys to finish
-  
+#### Substitute patterns
+To substitute a pattern using `sed`, we use the following syntax:
   
 ```bash
-  sed 's;pattern;replacement;g' <filename>
+sed 's;regex;replacement;'
 ```
 
-Remember that regular expressions offer a wide range of possibilities, allowing for complex pattern matching and manipulation. By mastering them, you'll gain a powerful toolset for working with text in various contexts, including scripting, programming, and data processing. So dive in, experiment, and unlock the full potential of regular expressions!
+The above command replaces the first occurrence of the `regex` pattern with the `replacement` string. If you want to match and edit every occurrence of the pattern, you can add the global (`g`) option:
 
+```bash
+  sed 's;pattern;replacement;g'
+```
+  
+By default, `sed` only matches and edits the first occurrence of the pattern per line. However, if you want to specify a specific number of occurrences to be replaced from left to right, you can replace the `g` option with a number.
 
+`sed` also allows you to store the matched pattern from the regular expression and use it in the replacement string. This can be done by enclosing parts of the regular expression in round brackets `()`. The matched patterns can be referred to as back references from `\1` to `\9` in the replacement string. This allows you to rearrange, splice, and edit lines of text easily. Let's look at an example:
 
+```bash
+echo "this might work for you" | sed 's;this \(might\) \(work\) for \(you\);\3 \1 \2;'
+```
 
+In this example, the command replaces the phrase "this might work for you" with "you might work", using the back references to rearrange the matched elements.
+
+Remember to use the `-E` flag to enable extended regular expression capability in `sed`. While basic regular expressions work without the flag, enabling the full regex capabilities requires including the flag.
+
+You can also specify line numbers where the substitutions will be made. For example, to replace the pattern once in lines `5` to `10` only, you can use the following command:
+
+```bash
+sed '5,10s;pattern;replacement;'
+```
+
+Once you have mastered the basics, `sed` offers advanced options to enhance its functionality. Here are a few examples:
+
+To insert a blank line below every line that matches a specific pattern:
+```bash
+sed ';pattern;G'
+```
+
+To print the line immediately before a pattern (excluding the line containing the pattern):
+```bash
+sed -n ';regex;{g;1!p;};h'
+```
+
+To print the line immediately after a pattern (excluding the line containing the pattern):
+```bash
+sed -n ';regex;{n;p;}'
+```
+
+These advanced options provide additional flexibility when working with `sed`, but it's recommended to explore them once you have a good grasp of the basics.
+
+To access a wide range of frequently asked questions and detailed documentation, we recommend visiting the GNU help pages [http://www.gnu.org/software/sed/](http://www.gnu.org/software/sed/). In particular, the list of one-liners [http://sed.sourceforge.net/sed1line.txt](http://sed.sourceforge.net/sed1line.txt) provides numerous practical applications. While the manual for `sed` may not be very useful due to the extensive and diverse nature of `sed`, these links and online resources are the most valuable sources for resolving any `sed`-related questions.
 
   ## Why have I learnt this?
 
 You have learned this information to comprehensively understand command-line basics and how to perform everyday tasks using the command line interface. The tutorial guides essential Linux/Unix commands and their effective utilisation. By acquiring these skills, you can effectively use the command line interface for file manipulation, navigation, and text editing tasks. In addition, this knowledge is valuable for working with command line tools, scripting, and bioinformatics analyses.
+
+
+
+
+
+
+
+Remember that regular expressions offer a wide range of possibilities, allowing for complex pattern matching and manipulation. By mastering them, you'll gain a powerful toolset for working with text in various contexts, including scripting, programming, and data processing. So dive in, experiment, and unlock the full potential of regular expressions!
 
 ## Whakamihi! You did it!
 
