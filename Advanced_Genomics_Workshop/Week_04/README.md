@@ -1,7 +1,7 @@
 #### Author: Rhys White ([@RhysTWhite](https://twitter.com/RhysTWhite))
 #### Affiliations: Institute of Environmental Science and Research - ESR
 
-# Advanced Genomic Insights Workshop Week 04: a tutorial on short-read sequence data quality control
+# Advanced Genomic Insights Workshop Week 04:<br> A tutorial on short-read sequence data quality control
 
 Table of contents
 =================
