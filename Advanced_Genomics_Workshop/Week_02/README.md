@@ -280,8 +280,30 @@ egrep "pattern" <filename>
 ```  
 
 #### Activity 2
-Rhys to do
-  
+**To complete the required tasks, follow the instructions below:**<br>
+ <br>
+**(i) Download the sequence data fasta file as specified below**<br>
+
+##### Getting the data
+Note: The data is ~23 MB. To download the data, please run these commands:
+
+```bash
+# Download the first FASTA file:
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_02/SRR14141431.fasta
+```
+**(ii) Once downloaded, ensure the fasta file is moved to the designated `week02/` directory**<br>
+**(iii) Verify the files present in your `week02/` directory by listing them**<br>
+**(iv) Use the `grep` command along with regular expressions to analyse the contents of the `SRR14141431.fasta` file to answer the questions below.**
+
+##### Questions
+
+**(a) Try and construct a command that matches all headers beginning with either "@SRR14141431.1." or "@SRR14141431.2."?**<br>
+**Please write a command that uses regular expressions and another command that doesn't rely on regex.**<br>
+ <br>
+**(b) Which command, using regular expressions, can be used to match all headers containing "length=xxx," where xxx falls within the range of 140 to 145?**<br>
+
+
+
 
   
   
