@@ -175,7 +175,7 @@ uniq <filename>
 
 Options:<br>
 - `-c`: Precedes each line with the number of occurrences<br>
-- `-f`: <num>: Skips the first <num> fields before checking for duplicates<br>
+- `-f`: Skips the first "num" fields before checking for duplicates<br>
 - `-d`: Only prints duplicate lines<br>
 - `-u`: Only prints unique lines regardless of order<br>
 
@@ -202,7 +202,7 @@ Te Whanganui-a-Tara,25,4,5
 **Now, let's combine the previous two steps using a pipe (`|`) operator.**<br>
   
 **Step 4: Showing only unique lines with `uniq`**<br>
-To show only the unique lines of `mytable.txt`, we can use the `uniq` command.<br>
+**To show only the unique lines of `mytable.txt`, we can use the `uniq` command.**<br>
   
 **Step 5: Showing only unique lines with `sort`**<br>
 **Alternatively, we can use the `sort` command to achieve the same result.**<br>
