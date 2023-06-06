@@ -221,7 +221,7 @@ wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Wo
 wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_01/SRR14141431.tar.gz
 ```
 
-**(ii) Once downloaded, ensure both files are copied to the designated `seqs/` directory**<br>
+**(ii) Once downloaded, ensure both files are moved to the designated `seqs/` directory**<br>
 **(iii) Verify the files present in your `seqs/` directory by listing them**<br>
 **(iv) Create a new file named `TestFile.fasta` by concatenating two identical copies of the `C.pecorum_MLST.fasta` file**<br>
 **(v) To determine the number of sequences in `TestFile.fasta`, utilise the `wc` and less commands**<br>
