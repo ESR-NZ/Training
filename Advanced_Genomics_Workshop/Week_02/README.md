@@ -10,8 +10,8 @@ Table of contents
    * [Prerequisites](#prerequisites)
    * [Introduction](#introduction)
    * [Let's get started...](#lets-get-started)
-      * [File permissions](#file-permissions)
-      * [Understanding the prompt](#Understanding-the-prompt)
+      * [File permissions](#File-permissions)
+      * [Basic text manipulation](#Basic-text-manipulation)
       * [Navigating the directory structure](#Navigating-the-directory-structure)
       * [File operations](#File-operations)
       * [File viewing and text editors](#File-viewing-and-text-editors)
@@ -132,8 +132,7 @@ When working with shell scripts, you might need to make them executable before r
 chmod +x script.sh
 ```
 
-
-
+### Basic text manipulation
 
 
 
