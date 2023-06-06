@@ -272,40 +272,82 @@ Take a look at this comprehensive regex [cheatsheet](https://ryanstutorials.net/
 ### Basic regular expressions
 We will focus on using `egrep` and `sed` commands for exploring how regular expressions work and how they can be used to search for specific patterns in text files. Although it's important to note that regex is widely used in various other commands and programming languages.
   
-  Using regular expressions with egrep:
-The egrep command is a powerful tool that enables us to search for patterns within text files using regular expressions. To use egrep, follow these steps:
+#### Using regular expressions with `egrep`
+The `egrep` command is a powerful tool that enables us to search for patterns within text files using regular expressions. To use `egrep`, run the following command:
 
-Open your terminal or command prompt.
-Navigate to the directory containing the text file you want to search.
-Run the following command:
-  egrep "pattern" filename
-Replace "pattern" with the regular expression you want to search for, and "filename" with the name of the text file you want to search in.
+```bash
+egrep "pattern" <filename>
+```  
 
-For example, let's say we have a text file called "example.txt" containing various lines of text. If we want to find all lines that contain the word "apple," we can use the following command:
+#### Activity 2
+<Rhys to do>
   
- egrep will display all lines in "example.txt" that match the given pattern.
 
-Using regular expressions with sed:
-The sed command, short for stream editor, is another useful tool for manipulating text using regular expressions. It allows us to search for patterns and perform actions such as substitution or deletion. To use sed with regular expressions, follow these steps:
-
-Open your terminal or command prompt.
-Navigate to the directory containing the text file you want to manipulate.
-Run the following command:
-  sed 's/pattern/replacement/' filename
-
-  Replace "pattern" with the regular expression you want to search for, and "replacement" with the desired text to replace the matched pattern. Finally, replace "filename" with the name of the text file you want to manipulate.
-
-For instance, let's assume we have a text file called "data.txt" containing several lines. If we want to replace all occurrences of the word "cat" with "dog," we can use the following command:
   
- sed 's/cat/dog/' data.txt
+  
+  
+  
+  
  
-  sed will modify "data.txt" by replacing every instance of "cat" with "dog" and display the updated text.
-
-Remember that regular expressions offer a wide range of possibilities, allowing for complex pattern matching and manipulation. By mastering them, you'll gain a powerful toolset for working with text in various contexts, including scripting, programming, and data processing. So dive in, experiment, and unlock the full potential of regular expressions!
-  
 
 ### sed stream editing essentials
+The `sed` command, short for stream editor, is another useful tool for manipulating text using regular expressions. Like `grep`, the `sed` command allows us to search for patterns and perform actions such as substitution or deletion. Let's dive into the different usage scenarios and how to handle large outputs effectively.
+  
+  
+#### Output a file with sed
+To use sed to process a file directly, you can follow this syntax:
+```bash
+sed <inputfile>
+```
+Here, the `sed` command will read the file, perform the specified operations, and output the result to the console (STDOUT).
+  
+#### Piping text into `sed`
+Alternatively, you can use `sed` as the recipient of text via a pipe. Here's an example:
+```bash  
+cat <inputfile> | sed
+```
+In this case, the `cat` command is used to read the contents of `<inputfile>`, which are then piped (`|`) to `sed` for processing. Again, the resulting output will be directed to the console (STDOUT).
 
+#### Handling large outputs
+When dealing with large outputs, it is often helpful to view only a portion of the output at a time. Here are a few techniques:
+
+##### Using head and tail
+To view the beginning of the output, you can pipe it to the head command like this:
+```bash  
+sed <inputfile> | head
+```
+  
+Similarly, to see the end of the output, you can pipe it to the tail command:
+```bash
+sed <inputfile> | tail
+```
+  
+##### Using `less` for paging
+If the output is too long to fit in your console window, you can use the `less` command to view it page by page. Here's an example:
+```bash
+sed <inputfile> | less
+```
+
+##### Redirecting output to a file
+If you want to save the `sed` output to a file, you can use the redirection operator `>` followed by the desired output file name. For example:
+```bash
+sed <inputfile> > output.txt
+```
+  
+This command will execute `sed`, process the contents of `<inputfile>`, and save the output to a file named output.txt.
+
+##### Handling never-ending text streams
+In case you have a never-ending stream of text, it's essential to know how to terminate the `sed` command. You can use the `CTRL-C` shortcut to stop the command execution and return to the command prompt.
+
+  
+ <Rhys to finish>  
+  
+  
+```bash
+  sed 's;pattern;replacement;g' <filename>
+```
+
+Remember that regular expressions offer a wide range of possibilities, allowing for complex pattern matching and manipulation. By mastering them, you'll gain a powerful toolset for working with text in various contexts, including scripting, programming, and data processing. So dive in, experiment, and unlock the full potential of regular expressions!
 
 
 
