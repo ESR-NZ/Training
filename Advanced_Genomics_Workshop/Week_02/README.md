@@ -214,7 +214,7 @@ To show only the unique lines of `mytable.txt`, we can use the `uniq` command.<b
 Regular expressions, often called regex or regexp, are patterns used for matching and manipulating text. They provide a concise and flexible way to search, extract, and replace specific patterns of characters within a larger text. You can use regular expressions in various programming languages and tools, such as Python, JavaScript, Perl, and many others. They are widely used for tasks like data validation, parsing, search and replace operations, and text manipulation. Regular expressions are supported by various Linux tools, including `grep`, `sed`, `awk`, and others. In this tutorial, we will cover the basics of regular expressions and how to use them in Linux.
 
 ## Let's get started...
-#### Basic concepts
+### Basic concepts
 Regular expressions are incredibly flexible and powerful tools for text pattern matching. You can use them in various programming languages, text editors, and command-line tools to perform complex searches and transformations on text data.<br> 
 Let's start with some common patterns and their meanings:
   
@@ -246,7 +246,7 @@ The plus sign (`+`) makes the preceding item greedy (matches 1 or more times).<b
 The asterisk (`*`) is a combination of the plus and question mark (matches 0 or more times).<br>
 **Example**: The pattern `g*d` matches "gd", "god", "good", "gooood", and so on.
 
-##### Curly brackets (`{}`) allow you to specify an exact number of matches
+#### Curly brackets (`{}`) allow you to specify an exact number of matches
 
 `{n}` matches exactly "n" times.<br>
 **Example**: The pattern `go{2}d` matches "good" but not "god" or "gd".
@@ -257,7 +257,7 @@ The asterisk (`*`) is a combination of the plus and question mark (matches 0 or 
 `{n,m}` matches between "n and m" times.<br>
 **Example**: The pattern `go{2,4}d` matches "good", "gooood", and "goooood", but not "god" or "gd".
 
-##### Finally, let's discuss anchors to match specific parts of a line
+#### Finally, let's discuss anchors to match specific parts of a line
 
 The caret (`^`) matches the beginning of a line.<br>
 **Example**: The pattern `^Start` matches lines that start with "Start".
