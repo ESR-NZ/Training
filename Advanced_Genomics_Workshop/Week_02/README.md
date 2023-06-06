@@ -105,21 +105,21 @@ The resulting permissions for `myfile.txt` will be:
 - The group has read and execute permissions
 - Others have only read permission
 
-**Remember, it's crucial to assign permissions carefully to maintain the security and integrity of your files. Grant only the necessary permissions to ensure proper access control while safeguarding sensitive data.**
+_Remember, it's crucial to assign permissions carefully to maintain the security and integrity of your files. Grant only the necessary permissions to ensure proper access control while safeguarding sensitive data._
 
 #### Editing a file before and after removing write permission:
 To understand the impact of file permissions on editing, we will attempt to edit a file both before and after removing write permission.
 
-**Exercise**:
-**Before removing write permission:**
-**- Use an editor of your choice to create and open a file**
-**- Make changes to the file as desired**
-**- Save and exit the editor**
+**Exercise**:<br>
+**Before removing write permission:**<br>
+**- Use an editor of your choice to create and open a file**<br>
+**- Make changes to the file as desired**<br>
+**- Save and exit the editor**<br>
 
-**After removing write permission:**
-**- Use the `chmod` command to remove write permission for the appropriate target (user, group, or others)**
-**- Attempt to open the file with the editor again**
-**- Notice that you cannot save any changes due to the removed write permission**
+**After removing write permission:**<br>
+**- Use the `chmod` command to remove write permission for the appropriate target (user, group, or others)**<br>
+**- Attempt to open the file with the editor again**<br>
+**- Notice that you cannot save any changes due to the removed write permission**<br>
 
 When working with files from shared folders, other users, or downloading from online repositories, it is usually necessary to use `chmod` to adjust their permissions. You'll frequently need to make a shell script executable before it can be executed on your system.
 
@@ -132,7 +132,16 @@ chmod +x script.sh
 ```
 
 ### Text manipulation basics
-Next, we will explore three essential commands for text file manipulation: `cut`, `sort`, and `uniq`. These commands are commonly used in Unix-based systems and provide powerful functionalities to extract, sort, and remove duplicates from text files. Additionally, we will briefly discuss file redirection using the `>` and `>>` redirection operators and the pipe `|` operator to connect commands.
+Next, we will explore three essential commands for text file manipulation: `cut`, `sort`, and `uniq`. These commands are commonly used in Unix-based systems and provide powerful functionalities to extract, sort, and remove duplicates from text files. Additionally, we will briefly discuss file redirection using the `>` and `>>` redirection operators and the pipe `|` operator to connect commands.<br>
+
+Remember, to access a command's manual page, you can use the man command followed by the name of the command you want to learn about. For example:
+
+```bash
+# Display the manual page for the ls command, which lists files and directories
+man sort
+```
+
+The manual page typically describes the command, its usage syntax, available options, and examples. You can navigate the manual page using the `arrow keys` or the `Page Up` and `Page Down` keys. Press `q` to exit the manual page and return to the command prompt.
 
 #### The cut command
 The cut command allows you to extract specific sections or fields from a file based on a specified delimiter. Here’s the basic syntax:
@@ -141,27 +150,68 @@ The cut command allows you to extract specific sections or fields from a file ba
 # Basic cut command
 cut -f <field(s)> -d <delimiter> <filename>
 ```
-The `-f` option specifies the field or column number(s) you want to extract
-The `-d` option specifies the delimiter used in the file
+- The `-f` option specifies the field or column number(s) you want to extract
+- The `-d` option specifies the delimiter used in the file
 
 #### The sort command
 The sort command is used to sort the lines of a text file. It provides options to control the sorting behaviour. Here's the basic syntax:
 
 ```bash
-# Basic cut command
+# Basic sort command
 sort <filename>
 ```
-
 - By default, the sort command performs a lexicographical sort in ascending order
 
 Options:
-- `-n`: Sorts lines in numeric order.
+- `-n`: Sorts lines in numeric order
 - `-r`: Sorts lines in reverse order (descending)
 - `-u`: Outputs only the first occurrence of each line (removes duplicates)
 
+#### The uniq command
+The `uniq` command reports or omits repeated lines in a file. Here's the basic syntax:
 
+```bash
+# Basic uniq command
+uniq <filename>
+```
+- By default, uniq only compares adjacent lines to identify duplicates
 
+Options:<br>
+- `-c`: Precedes each line with the number of occurrences<br>
+- `-f`: <num>: Skips the first <num> fields before checking for duplicates<br>
+- `-d`: Only prints duplicate lines<br>
+- `-u`: Only prints unique lines regardless of order<br>
 
+#### Activity 1
+  
+**Using the `echo` command, generate a file called `mytable.txt` consisting of six lines with the following contents:**
+
+```bash
+Tauranga Moana,32,1,2
+Te Whanganui-a-Tara,25,4,5
+Kirikiriroa,18,7,8
+Te Whanganui-a-Tara,25,4,5
+Ahuriri,12,8,9
+Te Whanganui-a-Tara,25,4,5
+```
+
+**Step 1: Checking the contents of mytable.txt**<br>
+**To begin, we'll use the `less` command to view the contents of `mytable.txt` in the terminal.**<br>
+
+**Step 2: Displaying the second column of `mytable.txt`**<br>
+**Next, we'll use the `cut` command to extract and display only the second column of `mytable.txt`.**<br>
+
+**Step 3: Using a pipe**<br>
+**Now, let's combine the previous two steps using a pipe (`|`) operator.**<br>
+  
+**Step 4: Showing only unique lines with `uniq`**<br>
+To show only the unique lines of `mytable.txt`, we can use the `uniq` command.<br>
+  
+**Step 5: Showing only unique lines with `sort`**<br>
+**Alternatively, we can use the `sort` command to achieve the same result.**<br>
+  
+**Step 6: Using `sort` and `uniq` in a pipe**<br>
+**Finally, let's combine `sort` and `uniq` using a pipe to show only the unique lines of `mytable.txt`.** <br>
 
 
 
