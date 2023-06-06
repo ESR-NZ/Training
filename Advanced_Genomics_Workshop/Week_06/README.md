@@ -1,7 +1,7 @@
 #### Author: Rhys White ([@RhysTWhite](https://twitter.com/RhysTWhite))
 #### Affiliations: Institute of Environmental Science and Research - ESR
 
-# Advanced Genomic Insights Workshop Week 06: a tutorial on assembling a genome using short-read sequence data
+# Advanced Genomic Insights Workshop Week 06:<br> A tutorial on assembling a genome using short-read sequence data
 
 Table of contents
 =================
