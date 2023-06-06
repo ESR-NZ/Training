@@ -8,10 +8,11 @@ Table of contents
 
 <!--ts-->
    * [Prerequisites](#prerequisites)
+   * [Wrapping up Week 01](#wrapping-up-week-01)
+      * [File permissions](#file-permissions)
+      * [Text manipulation basics](#text-manipulation-basics)
    * [Introduction](#introduction)
    * [Let's get started...](#lets-get-started)
-      * [File permissions](#File-permissions)
-      * [Text manipulation basics](#Text-manipulation-basics)
       * [Basic regular expressions](#Basic-regular-expressions)
       * [sed stream editing essentials](#sed-stream-editing-essentials)
    * [Why have I learnt this?](#why-have-i-learnt-this)
@@ -28,12 +29,8 @@ If you encounter difficulties during this session, we recommend dedicating the n
 
 Please utilise Teams for any questions you may have regarding command-line usage. Remember, there is no such thing as a silly question. Learning a new language, including its vocabulary (commands) and grammar (syntax), takes time, and our team is here to assist you throughout the process. So don't hesitate to ask for help!
 
-## Introduction
-Regular expressions, often called regex or regexp, are patterns used for matching and manipulating text. They provide a concise and flexible way to search, extract, and replace specific patterns of characters within a larger text. You can use regular expressions in various programming languages and tools, such as Python, JavaScript, Perl, and many others. They are widely used for tasks like data validation, parsing, search and replace operations, and text manipulation. Regular expressions are supported by various Linux tools, including `grep`, `sed`, `awk`, and others.
-
-However, there are a few important concepts that you should know about before we dive into regular expressions. In this tutorial, we will cover the basics of regular expressions and how to use them in Linux.
-
-## Let's get started...
+## Wrapping up Week 01
+There are a few important concepts that you should know about before we dive into regular expressions.<br>
 First, ensure that you are currently located within the `week02` directory, which you can create as per the instructions provided in [Week 01: an introduction to the command line](https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_01).
 
 ### File permissions
@@ -213,10 +210,10 @@ To show only the unique lines of `mytable.txt`, we can use the `uniq` command.<b
 **Step 6: Using `sort` and `uniq` in a pipe**<br>
 **Finally, let's combine `sort` and `uniq` using a pipe to show only the unique lines of `mytable.txt`.** <br>
 
+## Introduction
+Regular expressions, often called regex or regexp, are patterns used for matching and manipulating text. They provide a concise and flexible way to search, extract, and replace specific patterns of characters within a larger text. You can use regular expressions in various programming languages and tools, such as Python, JavaScript, Perl, and many others. They are widely used for tasks like data validation, parsing, search and replace operations, and text manipulation. Regular expressions are supported by various Linux tools, including `grep`, `sed`, `awk`, and others. In this tutorial, we will cover the basics of regular expressions and how to use them in Linux.
 
-
-
-
+## Let's get started...
 ### Basic regular expressions
 
 
