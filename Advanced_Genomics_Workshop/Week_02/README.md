@@ -405,20 +405,14 @@ These advanced options provide additional flexibility when working with `sed`, b
 To access a wide range of frequently asked questions and detailed documentation, we recommend visiting the GNU help pages [http://www.gnu.org/software/sed/](http://www.gnu.org/software/sed/). In particular, the list of one-liners [http://sed.sourceforge.net/sed1line.txt](http://sed.sourceforge.net/sed1line.txt) provides numerous practical applications. While the manual for `sed` may not be very useful due to the extensive and diverse nature of `sed`, these links and online resources are the most valuable sources for resolving any `sed`-related questions.
 
   ## Why have I learnt this?
-
-You have learned this information to comprehensively understand command-line basics and how to perform everyday tasks using the command line interface. The tutorial guides essential Linux/Unix commands and their effective utilisation. By acquiring these skills, you can effectively use the command line interface for file manipulation, navigation, and text editing tasks. In addition, this knowledge is valuable for working with command line tools, scripting, and bioinformatics analyses.
-
-
-
-
-
-
+  
+Learning regular expressions and how to use them in Linux can be beneficial for several reasons. Firstly, regular expressions provide a powerful and flexible way to search, extract, and manipulate text patterns, allowing you to efficiently perform complex operations on textual data. This skill can be valuable for data validation, parsing, search and replace operations, and text manipulation. Additionally, regular expressions are widely supported in various programming languages and Linux tools, making them applicable in multiple contexts and enhancing your overall proficiency as a programmer or Linux user. This knowledge is valuable for working with command line tools, scripting, and bioinformatics analyses.
 
 Remember that regular expressions offer a wide range of possibilities, allowing for complex pattern matching and manipulation. By mastering them, you'll gain a powerful toolset for working with text in various contexts, including scripting, programming, and data processing. So dive in, experiment, and unlock the full potential of regular expressions!
 
 ## Whakamihi! You did it!
 
-That's it for this tutorial on a crash course on the command line! You've comprehensively understood command-line basics and learned various tasks using command-line tools. In addition, by practising exercises and familiarising yourself with Linux/Unix commands, you've honed your skills in navigating directories, managing files, counting lines/words/characters, and more. You've also discovered advanced tips like tab auto-completion, accessing command manuals, and using wildcards for file manipulation. These techniques boost productivity and efficiency.
+That's it for this tutorial on conquering the command line! This tutorial has introduced the basics of regular expressions and their usage in Linux. We explored common patterns, modifiers, and anchors, allowing precise text pattern matching. By understanding regular expressions, you gain the ability to perform advanced text manipulation tasks efficiently, whether it's searching for specific patterns, extracting information, or replacing text. Regular expressions are widely supported in programming languages and Linux tools, making them a valuable skill for developers and Linux users alike. With this foundation, you can confidently delve deeper into regular expressions and leverage their power in your programming and text-processing endeavours.
 
 Remember, mastery of the command line takes practice. If you have any further questions, feel free to ask.
 
