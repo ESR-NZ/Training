@@ -1,7 +1,7 @@
 #### Author: Rhys White ([@RhysTWhite](https://twitter.com/RhysTWhite))
 #### Affiliations: Institute of Environmental Science and Research - ESR
 
-# Advanced Genomic Insights Workshop Week 01: an introduction to the command line
+# Advanced Genomic Insights Workshop Week 01:<br> an introduction to the command line
 
 Table of contents
 =================
