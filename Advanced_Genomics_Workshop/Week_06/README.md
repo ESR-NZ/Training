@@ -229,7 +229,7 @@ quast.py /path/to/assembly/${SAMPLE}.fasta -o quast_${SAMPLE}_output
 Replace `${SAMPLE}.fasta` with the names of your input files. This will generate a report summarising the quality of the genome assembly.
 
 ### Question
-In your opinion, which of the two assembler tools (i.e., `velvet` and `spades`) produced a superior assembly based on your observations?**<br>
+**In your opinion, which of the two assembler tools (i.e., `velvet` and `spades`) produced a superior assembly based on your observations?**<br>
   
 ## Rhys To-do: CheckM
   
