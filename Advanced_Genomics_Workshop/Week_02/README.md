@@ -41,19 +41,19 @@ First, ensure that you are currently located within the `week02` directory, whic
 File permissions are essential for controlling who can read, write, and execute a file. Let's break down the key concepts:
 
 ##### Permission types
-- Read (r): Allows users to view the contents of a file.
-- Write (w): Permits users to modify or delete a file.
-- Execute (x): Grants users the ability to run or execute a file as a program.
+- Read (r): Allows users to view the contents of a file
+- Write (w): Permits users to modify or delete a file
+- Execute (x): Grants users the ability to run or execute a file as a program
 
 ##### Permission groups
-- Owner (u): The user who owns the file. Typically, the creator of the file.
-- Group (g): The group assigned to the file. Multiple users can be part of the same group.
-- Other (o): Users who are neither the owner nor in the assigned group.
-- All (a): All users within the system, regardless of their affiliation.
+- Owner (u): The user who owns the file. Typically, the creator of the file
+- Group (g): The group assigned to the file. Multiple users can be part of the same group
+- Other (o): Users who are neither the owner nor in the assigned group
+- All (a): All users within the system, regardless of their affiliation
 
 ##### Permission modifiers
-- Granting (+): Adds the specified permission to the file for the designated group.
-- Revoking (-): Removes the specified permission from the file for the designated group.
+- Granting (+): Adds the specified permission to the file for the designated group
+- Revoking (-): Removes the specified permission from the file for the designated group
 
 By combining these file permissions, we can control precisely who can perform certain actions on a file.
 
@@ -109,37 +109,35 @@ The resulting permissions for `myfile.txt` will be:
 **Remember, it's crucial to assign permissions carefully to maintain the security and integrity of your files. Grant only the necessary permissions to ensure proper access control while safeguarding sensitive data.**
 
 #### Editing a file before and after removing write permission:
-
-
-
-
-
 To understand the impact of file permissions on editing, we will attempt to edit a file both before and after removing write permission.
 
-Example:
+**Exercise**:
+**Before removing write permission:**
+**- Use an editor of your choice to create and open a file**
+**- Make changes to the file as desired**
+**- Save and exit the editor**
 
-Before removing write permission:
+**After removing write permission:**
+**- Use the `chmod` command to remove write permission for the appropriate target (user, group, or others)**
+**- Attempt to open the file with the editor again**
+**- Notice that you cannot save any changes due to the removed write permission**
 
-Use an editor of your choice to open the file.
-Make changes to the file as desired.
-Save and exit the editor.
-After removing write permission:
+When working with files from shared folders, other users, or downloading from online repositories, it is usually necessary to use `chmod` to adjust their permissions. You'll frequently need to make a shell script executable before it can be executed on your system.
 
-Use the chmod command to remove write permission for the appropriate target (user, group, or others).
-Attempt to open the file with the editor again.
-Notice that you cannot save any changes due to the removed write permission.
+#### Making a shell script executable:
+When working with shell scripts, you might need to make them executable before running them on your system. This can be done using the `chmod` command like this:
 
-Step 4: Making a Shell Script Executable:
-When working with shell scripts, you might need to make them executable before running them on your system.
-
-chmod +x script.sh 
-
-This command adds execute permission (+x) to the file script.sh, making it executable.
+```bash
+# Add execute permission (+x) to the file script.sh
+chmod +x script.sh
+```
 
 
 
 
-In general, you will need to use chmod whe moving files from shared folders, other users, or downloading from online repositories. It is ofter the case that you will need to make a shell scrot executable before it can be run on your system
+
+
+
 
 
 
