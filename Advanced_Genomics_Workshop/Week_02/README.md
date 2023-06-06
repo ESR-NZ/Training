@@ -402,6 +402,15 @@ sed -n ';regex;{n;p;}'
 
 These advanced options provide additional flexibility when working with `sed`, but it's recommended to explore them once you have a good grasp of the basics.
 
+#### Activity 3
+Use the `sed` command along with regular expressions to analyse the contents of the `SRR14141431.fasta` file to answer the questions below.**
+
+##### Questions
+
+**(a) What would be an appropriate `sed` command to replace all spaces with underscore characters in the file SRR14141431.fasta?**<br>
+ <br>
+**(b) What would be a good `sed` command to remove the second field from every header in the file SRR14141431.fasta?**<br>
+
 To access a wide range of frequently asked questions and detailed documentation, we recommend visiting the GNU help pages [http://www.gnu.org/software/sed/](http://www.gnu.org/software/sed/). In particular, the list of one-liners [http://sed.sourceforge.net/sed1line.txt](http://sed.sourceforge.net/sed1line.txt) provides numerous practical applications. While the manual for `sed` may not be very useful due to the extensive and diverse nature of `sed`, these links and online resources are the most valuable sources for resolving any `sed`-related questions.
 
   ## Why have I learnt this?
