@@ -135,10 +135,7 @@ Some standard options you may want to include are:
 
 
 
-to do 
-
-
-
+Rhys to do 
 
 
 After `nanoQC` has finished running, navigate to the output directory specified in the previous step to view the reports. Each FASTQ file will have its own report, which can be opened in a web browser by clicking on the HTML file.
@@ -153,23 +150,37 @@ The `FastQC` reports provide information about the quality of the sequencing dat
 
 
 
-
-
-
-
-
-
-
-
-
 ### Filtering and trimming of long-read sequencing data using nanofilt
 
+`nanoQC` is a tool that provides various metrics and visualisations to assess the quality and characteristics of long-read sequencing ONT sequencing data. This section will cover the basics for using `nanoQC` to check the quality of your ONT sequence reads.
+
+For information for `NanoFilt` can be found here: [https://github.com/wdecoster/nanofilt](https://github.com/wdecoster/nanofilt)
+
+Remember to cite the paper:
+
+&emsp; De Coster W, D’hert S, Schultz DT, Cruts M, Van Broeckhoven C. NanoPack: visualizing and processing long-read sequencing data. _Bioinformatics_ 2018;34:2666-2669 doi: [10.1093/bioinformatics/bty149](https://doi.org/10.1093/bioinformatics/bty149)
+
+#### Running NanoFilt
+
+Once you are in the directory containing your FASTQ files, you can run `NanoFilt` on the command line using the following syntax:
+
+```bash
+gunzip -c ${SAMPLE}_raw_ONT.fastq.gz | NanoFilt -q 10 -l 200 | gzip > ${SAMPLE}_filtered_ONT.fastq.gz
+```
+
+
+Rhys to do 
 
 
 
+After `nanoQC` has finished running, navigate to the output directory specified in the previous step to view the reports. Each FASTQ file will have its own report, which can be opened in a web browser by clicking on the HTML file.
 
+The `FastQC` reports provide information about the quality of the sequencing data, including metrics such as per-base quality scores, GC content, and sequence length distribution. The reports can be used to identify potential issues with the sequencing data and to guide downstream analysis.
 
-
+**Questions**<br>
+**(i) How many reads does each of these fastq files contain?**<br>
+**(ii) Are these single-end or paired-end reads?**<br>
+**(iii) How long is each of the reads?**<br>
 
 
 ### Conquering Taxonomic Classification with Kraken2
