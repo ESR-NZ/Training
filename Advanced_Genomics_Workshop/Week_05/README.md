@@ -87,7 +87,9 @@ zcat *.fastq.gz > 22AR0430_raw_ONT.fastq
 
 This will create one FASTQ file called `22AR0430_raw_ONT.fastq` with all your basecalled reads in it.
 
-To save storage space, for the purpose of this course we can remove the individual `.fastq.gz` files after merging them into a single large `.fastq` file. Since we have successfully consolidated the ten `.fastq.gz` files, it is safe to delete the original files:
+To save storage space, for the purpose of this course we can remove the individual `.fastq.gz` files after merging them into a single large `.fastq` file. Since we have successfully consolidated the ten `.fastq.gz` files, it is safe to delete the original files. 
+
+**Be cautious while using the following command, as it deletes a directory and all its contents without a second chance.**
 
 ```bash
 rm *.fastq.gz
