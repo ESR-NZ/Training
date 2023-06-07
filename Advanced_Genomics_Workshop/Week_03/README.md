@@ -49,6 +49,8 @@ To read a SAM file, you can use a text editor or a command-line tool like [SAMto
 
 #### Let's start with a BAM!
 
+First, ensure that you are currently located within the `week03` directory, which you can create as per the instructions provided in [Week 01: an introduction to the command line](https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_01).
+
 ##### Getting the data
 Note: The data is ~20 MB. To download the data, please run these commands:
 
