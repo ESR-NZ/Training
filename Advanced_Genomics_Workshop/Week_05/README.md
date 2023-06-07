@@ -79,13 +79,13 @@ To confirm that all ten files are present in your current working directory, che
 ls
 ```
 
-In bioinformatics, it is a common practice to merge multiple fastq files into a single large file for downstream analyses. From within the `raw_reads` directory use the `zcat` command to do this:
+In bioinformatics, it is a common practice to merge multiple FASTQ files into a single large file for downstream analyses. From within the `raw_reads` directory use the `zcat` command to do this:
 
 ```bash
 zcat *.fastq.gz > 22AR0430_raw_ONT.fastq
 ```
 
-This will create one fastq file called `22AR0430_raw_ONT.fastq` with all your basecalled reads in it.
+This will create one FASTQ file called `22AR0430_raw_ONT.fastq` with all your basecalled reads in it.
 
 To save storage space, for the purpose of this course we can remove the individual `.fastq.gz` files after merging them into a single large `.fastq` file. Since we have successfully consolidated the ten `.fastq.gz` files, it is safe to delete the original files:
 
@@ -100,4 +100,102 @@ gzip 22AR0430_raw_ONT.fastq
 ```
 
 
-### Analysing Quality of Sequence Read Data with nanoQC
+### Analysing quality of sequence read data with nanoQC
+
+`nanoQC` is a tool that provides various metrics and visualisations to assess the quality and characteristics of long-read sequencing ONT sequencing data. This section will cover the basics for using `nanoQC` to check the quality of your ONT sequence reads.
+
+For information for `nanoQC` can be found here: [https://github.com/wdecoster/nanoQC](https://github.com/wdecoster/nanoQC)
+
+Remember to cite the paper:
+
+&emsp; De Coster W, D’hert S, Schultz DT, Cruts M, Van Broeckhoven C. NanoPack: visualizing and processing long-read sequencing data. _Bioinformatics_ 2018;34:2666-2669 doi: [10.1093/bioinformatics/bty149](https://doi.org/10.1093/bioinformatics/bty149)
+
+Rhys to input code here...
+
+#### Running nanoQC
+
+Once you are in the directory containing your FASTQ files, you can run `nanoQC` on the command line using the following syntax:
+
+```bash
+nanoQC [options] --fastq ${SAMPLE}_raw_ONT.fastq.gz --output_dir <output_directory>
+```
+
+Replace `${SAMPLE}_raw_ONT.fastq.gz` with the name of your FASTQ file.
+
+Some standard options you may want to include are:
+
+`-o` or `--outdir` to specify the output directory where the `nanoQC` reports will be saved.<br>
+`-l` or `--minlen` to specify the minimum length of reads to be included in the plots.<br>
+
+#### Viewing the nanoQC reports
+
+
+
+
+
+to do 
+
+
+
+
+
+After `nanoQC` has finished running, navigate to the output directory specified in the previous step to view the reports. Each FASTQ file will have its own report, which can be opened in a web browser by clicking on the HTML file.
+
+The `FastQC` reports provide information about the quality of the sequencing data, including metrics such as per-base quality scores, GC content, and sequence length distribution. The reports can be used to identify potential issues with the sequencing data and to guide downstream analysis.
+
+**Questions**<br>
+**(i) How many reads does each of these fastq files contain?**<br>
+**(ii) Are these single-end or paired-end reads?**<br>
+**(iii) How long is each of the reads?**<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Filtering and trimming of long-read sequencing data using nanofilt
+
+
+
+
+
+
+
+
+
+### Conquering Taxonomic Classification with Kraken2
+
+`Kraken2` is a tool used for the taxonomic classification of sequence reads. It uses k-mer-based approaches to match sequence reads against a reference database of known genomes, allowing it to quickly and accurately classify reads into taxonomic groups.
+
+This section will cover the basics for using `Kraken2` to classify sequence reads.
+
+The manual for `Kraken2` can be found here: [https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown)
+
+Remember to cite the paper:
+
+&emsp; Wood DE, Salzberg SL. Kraken: ultrafast metagenomic sequence classification using exact alignments. _Genome Biology_ 2014;15:R46 doi: [10.1186/gb-2014-15-3-r46](https://doi.org/10.1186/gb-2014-15-3-r46)
+
+#### Classifying your reads
+
+We can use `Kraken2` to classify our example sequences. To classify the sequences, we will use the following `Kraken2` command:
+
+```bash
+kraken2 --db /path/to/database/$DBNAME --threads ${CPUS} --memory-mapping --gzip-compressed --output kraken2_output --use-names --report ${SAMPLE}_kraken2_report /path/to/filtered_reads/${SAMPLE}_filtered_ONT.fastq.gz
+```
+
+Replace `${SAMPLE}` with the name of your sample. I.e., `22AR0430`
+
+This will run `Kraken2` on the input sequences `${SAMPLE}_filtered_ONT.fastq.gz` using your designated `Kraken2` database. 
+
+The `--output` flag specifies the output file where `Kraken2` will save the classified sequences. The `--report` flag specifies the report file where `Kraken2` will save a summary of the classification results. `Kraken2` can handle gzip compressed files as input by specifying `--gzip-compressed` flag. The `--threads` flag specifies the number of CPU threads to use for classification (parallel processing). The output will be written to a file called "22AR0430_kraken2_output" and a report file called "22AR0430_kraken2_report".
+
+**Question**<br>
+**(i) Based on your analysis, which bacterial species do the majority of the reads belong to?**<br>
+
