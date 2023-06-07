@@ -63,7 +63,7 @@ wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Wee
 wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_9.fastq.gz
 ```
 
-Now, make sure you are in the `raw_reads` folder (as well as your `wget_download.sh` script. Now run the download using:
+Now, make sure you are in the `raw_reads` folder (as well as your `wget_download.sh` script). Please run the download using:
 
 ```bash
 # Run your wget_download.sh script:
