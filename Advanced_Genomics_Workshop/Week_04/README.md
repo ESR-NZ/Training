@@ -31,6 +31,8 @@ In the world of genomics and bioinformatics, it is crucial to ensure the quality
 
 ## Let's get started...
 
+First, ensure that you are currently located within the `week04` directory, which you can create as per the instructions provided in [Week 01: an introduction to the command line](https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_01).
+
 ##### Getting the data
 Note: The data is ~40 MB. To download the data, please run these commands:
 
