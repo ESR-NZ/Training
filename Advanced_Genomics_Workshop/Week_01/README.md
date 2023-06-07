@@ -302,7 +302,7 @@ gunzip <filename>
 Create a tar archive named `archive.tar.gz` containing 'filename': 
 ```bash
 # Compress an entire directory or a single file
-tar -czvf archive.tar <filename>
+tar -czvf archive.tar.gz <filename>
 ```
 
 Here’s what those switches actually mean:
