@@ -129,7 +129,7 @@ To download the adapter fasta file, please run these commands:
 
 ```bash
 # Download the file with forward paired-end reads:
-wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Rhys_Toolbox/01_Quality_control/trimmomatic.fa
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_04/trimmomatic.fa
 ```
 
 #### Prepare your input files
