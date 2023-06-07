@@ -212,3 +212,10 @@ The `--output` flag specifies the output file where `Kraken2` will save the clas
 **Question**<br>
 **(i) Based on your analysis, which bacterial species do the majority of the reads belong to?**<br>
 
+## Why have I learnt this?
+
+Tools like `FastQC`, `Trimmomatic`, and `Kraken2` are essential for analysing sequence data before downstream analysis. `FastQC` provides a detailed quality control report, identifying potential issues with data and allowing researchers to decide whether to perform additional quality control steps. `Trimmomatic` removes low-quality reads, adapter sequences, and contaminants to improve the accuracy of downstream analysis. `Kraken2` classifies reads based on their taxonomic origin, helping researchers understand the microbial community present in the sample and identify potential sources of error. Using these tools before downstream analysis can improve the quality and accuracy of the data, leading to more informed decisions and accurate results.
+
+## Whakamihi! You did it!
+
+That's it for this tutorial on sequence data quality control! You have investigated the quality of your sequence read data using `FastQC`, successfully used `Trimmomatic` to remove low-quality bases and Illumina adaptor sequences from your reads,  and employed `Kraken2` for the taxonomic classification of your DNA sequences. If you have any further questions, feel free to ask.
