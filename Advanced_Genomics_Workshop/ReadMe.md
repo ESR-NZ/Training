@@ -23,6 +23,22 @@ If you need help accessing the HPC, please refer to the Basic Server Usage FAQ o
 
 Before delving into genomic sequence data analysis, week 1 will ensure everyone's comfort with Unix commands. Throughout the first two weeks, there will be opportunities to discuss and address any challenges encountered with specific commands. However, should you encounter difficulties in week 1, we recommend thoroughly exploring the Unix tutorial notes in the Software Carpentry resources. You can access them here: [https://swcarpentry.github.io/shell-novice/index.html](https://swcarpentry.github.io/shell-novice/index.html)
 
+## What we will cover?
+
+The topic covered are as follows:
+
+Week 1: An introduction to the command line<br>
+Week 2: Conquering the command line with confidence<br>
+Week 3: Navigating read-mapping files<br>
+Week 4: Short-read sequence data quality control<br>
+Week 5: Long-read sequence data quality control<br>
+Week 6: Assembling a genome using sequence data<br>
+_Week 7: Multi-locus sequencing typing, antibiotic resistance gene detection<br>
+Week 8: Phylogenetics<br>
+Week 9: Amplicon sequencing<br>
+Week 10: Using Jupyter Notebooks_
+
+
 ## A final note...
 Everyone works at their own pace, so it's important to recognise that setting aside an extra couple of hours per week (aside from the hands-on tutorials) might be beneficial to maximise your progress.
 
