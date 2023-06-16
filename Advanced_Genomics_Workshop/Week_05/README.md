@@ -11,8 +11,8 @@ Table of contents
    * [Prerequisites](#prerequisites)
    * [Introduction](#introduction)
    * [Let's get started...](#lets-get-started)
-      * [Analysing Quality of Sequence Read Data with FastQC](#analysing-quality-of-sequence-read-data-with-fastqc)
-      * [Sequence Data Processing with Trimmomatic: Quality Filtering and Adapter Removal](#sequence-data-processing-with-trimmomatic-quality-filtering-and-adapter-removal)
+      * [Analysing quality of sequence read data with nanoQC](#analysing-quality-of-sequence-read-data-with-nanoQC)
+      * [Filtering and trimming of long-read sequencing data using nanofilt](#filtering-and-trimming-of-long-read-sequencing-data-using-nanofilt)
       * [Conquering Taxonomic Classification with Kraken2](#conquering-taxonomic-classification-with-kraken2)
       
       
