@@ -119,7 +119,7 @@ Rhys to input code here...
 Once you are in the directory containing your FASTQ files, you can run `nanoQC` on the command line using the following syntax:
 
 ```bash
-nanoQC [options] --fastq ${SAMPLE}_raw_ONT.fastq.gz --output_dir <output_directory>
+nanoQC [options] ${SAMPLE}_raw_ONT.fastq.gz -o <output_directory>
 ```
 
 Replace `${SAMPLE}_raw_ONT.fastq.gz` with the name of your FASTQ file.
