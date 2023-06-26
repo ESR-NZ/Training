@@ -51,16 +51,16 @@ Note: The data is ~236 MB. To download the data, please make a script file named
 
 ```bash
 # Download the files with ONT raw reads:
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_0.fastq.gz
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_1.fastq.gz
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_2.fastq.gz
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_3.fastq.gz
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_4.fastq.gz
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_5.fastq.gz
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_6.fastq.gz
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_7.fastq.gz
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_8.fastq.gz
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_9.fastq.gz
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_0.fastq.gz
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_1.fastq.gz
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_2.fastq.gz
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_3.fastq.gz
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_4.fastq.gz
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_5.fastq.gz
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_6.fastq.gz
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_7.fastq.gz
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_8.fastq.gz
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_05/Fastq_pass_barcode11/FAS91936_pass_barcode11_069450e3_1619d8e7_9.fastq.gz
 ```
 
 Now, make sure you are in the `raw_reads` folder (as well as your `wget_download.sh` script). Please run the download using:
