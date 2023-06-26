@@ -289,7 +289,7 @@ Note: The data is ~23 MB. To download the data, please run these commands:
 
 ```bash
 # Download the first FASTA file:
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_02/SRR14141431.fasta
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_02/SRR14141431.fasta
 ```
 **(ii) Once downloaded, ensure the fasta file is moved to the designated `week02/` directory**<br>
 **(iii) Verify the files present in your `week02/` directory by listing them**<br>
