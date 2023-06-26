@@ -218,7 +218,7 @@ wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Wo
 
 ```bash
 # Download the second FASTA file:
-wget https://github.com/ESR-NZ/Training/blob/main/Advanced_Genomics_Workshop/Week_01/SRR14141431.tar.gz
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_01/SRR14141431.tar.gz
 ```
 
 **(ii) Once downloaded, ensure both files are moved to the designated `seqs/` directory**<br>
