@@ -329,7 +329,7 @@ To download the cheat sheet, please run this command:
 
 ```bash
 # Download the cheat sheet file:
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_01/Unix_Linux_CheatSheet.pdf
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_01/Unix_Linux_CheatSheet.pdf
 ```
 
   ## Why have I learnt this?
