@@ -213,12 +213,12 @@ To download the data, please run these commands:
 
 ```bash
 # Download the first FASTA file:
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_01/C.pecorum_MLST.fasta
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_01/C.pecorum_MLST.fasta
 ```
 
 ```bash
 # Download the second FASTA file:
-wget https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_01/SRR14141431.tar.gz
+wget https://github.com/ESR-NZ/Training/blob/main/Advanced_Genomics_Workshop/Week_01/SRR14141431.tar.gz
 ```
 
 **(ii) Once downloaded, ensure both files are moved to the designated `seqs/` directory**<br>
