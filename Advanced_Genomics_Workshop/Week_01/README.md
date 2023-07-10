@@ -319,7 +319,7 @@ tar -xzvf archive.tar.gz
 ```
 
 #### Activity 3
-**To uncompress the file `SRR14141431.tar.gz`, employ the `grep` command to extract all the lines containing fasta headers and store them in a text file. Then, utilise `sed` to prepend your name to the beginning of each line and save the modified output to a different file. Finally, open the file in a text editor or utilise commands like `head`, `tail`, or `less` to confirm that your changes were successfully applied.**
+**First, we need to uncompress the file `SRR14141431.tar.gz`. Then employ the `grep` command to extract all the lines containing fasta headers and store them in a text file. Then, utilise `sed` to prepend your name to the beginning of each line and save the modified output to a different file. Finally, open the file in a text editor or utilise commands like `head`, `tail`, or `less` to confirm that your changes were successfully applied.**
 
 
 ##### Cheat sheet:
