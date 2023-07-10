@@ -236,7 +236,7 @@ Various commands and techniques exist for file viewing, text editing, searching 
 
 #### File viewing and text editors
 ##### Text editors
-Use the Vim editor to open a file for editing or create a new file. For excample:
+Use the Vim editor to open a file for editing or create a new file. For example:
 
 ```bash
 # Open a file for editing or create a new file
