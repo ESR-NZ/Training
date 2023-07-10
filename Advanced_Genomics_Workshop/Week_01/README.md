@@ -302,7 +302,7 @@ gunzip <filename>
 Create a tar archive named `archive.tar.gz` containing 'filename': 
 ```bash
 # Compress an entire directory or a single file
-tar -czvf archive.tar.gz <filename>
+tar -czvf filename.tar.gz <filename>
 ```
 
 Here’s what those switches actually mean:
@@ -315,7 +315,7 @@ Here’s what those switches actually mean:
 Extract files from a tar archive named 'archive.tar.gz'
 ```bash
 # Extract an archive
-tar -xzvf archive.tar.gz
+tar -xzvf filename.tar.gz
 ```
 
 #### Activity 3
