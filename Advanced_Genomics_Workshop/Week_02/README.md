@@ -93,7 +93,7 @@ Consider the file `myfile.txt` that you want to modify the permissions for. Let'
 chmod 754 myfile.txt
 ```
 
-The first digit (7) represents the permissions for the file owner, which is a combination of read (4), write (2), and execute (1)<br>
+The first digit (7) represents the permissions for the file owner, which is the sum of read (4), write (2), and execute (1)<br>
 The second digit (5) represents the permissions for the group, consisting of read (4) and execute (1)<br>
 The third digit (4) represents the permissions for others, which only includes read (4)<br>
 
@@ -134,7 +134,7 @@ Next, we will explore three essential commands for text file manipulation: `cut`
 Remember, to access a command's manual page, you can use the man command followed by the name of the command you want to learn about. For example:
 
 ```bash
-# Display the manual page for the ls command, which lists files and directories
+# Display the manual page for the sort command, which sorts lines of text files
 man sort
 ```
 
