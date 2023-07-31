@@ -241,7 +241,7 @@ There are several tools and commands that can be used to manipulate and work wit
 
 `samtools view -f` can be used to filter out reads based on their FLAG values. For example, `samtools view -f 4` would filter out all unmapped reads.
 
-`samtools flagstat` can be used to generate summary statistics about the alignments in a SAM file, including the number and percentage of reads that pass certain quality control checks (e.g. properly aligned, paired-end, etc.).
+`samtools flagstat` can be used to generate summary statistics about the alignments in a BAM file, including the number and percentage of reads that pass certain quality control checks (e.g. properly aligned, paired-end, etc.).
 
 #### Understanding the CIGAR field in a SAM output
 
