@@ -223,7 +223,7 @@ QUAST is a popular software tool used to assess the quality of genome assemblies
 To run QUAST, we will use the `quast.py` command.
 
 ```bash
-quast.py /path/to/assembly/${SAMPLE}.fasta -o quast_${SAMPLE}_output
+quast /path/to/assembly/${SAMPLE}.fasta -o quast_${SAMPLE}_output
 ```
 
 Replace `${SAMPLE}.fasta` with the names of your input files. This will generate a report summarising the quality of the genome assembly.
