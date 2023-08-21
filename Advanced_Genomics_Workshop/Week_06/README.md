@@ -207,7 +207,7 @@ In this command, `-o` specifies the output directory, `-1` and `-2` specify the 
 Now, we're going to run `spades` using our trimmed reads:
 
 ```
-spades.py -t 4 -o output_dir -1 Corella_11_Sub_trimmed_1.fastq.gz -2 Corella_11_Sub_trimmed_2.fastq.gz -o Corella_11_Sub_spades_output
+spades.py -t 4 -1 Corella_11_Sub_trimmed_1.fastq.gz -2 Corella_11_Sub_trimmed_2.fastq.gz -o Corella_11_Sub_spades_output
 ```
 
 `spades` is another powerful tool for _de novo_ genome assembly. By following the above steps, you can use `spades` to assemble your sequence data and obtain a high-quality assembly.
