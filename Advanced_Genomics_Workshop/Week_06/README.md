@@ -64,7 +64,7 @@ cd assembly
 
 ###### Create the soft link
 
-To create a soft link, use the `ln` command with the `-s` option, followed by the path to the file or directory you want to link, and the name of the soft link you wish to create. Edit this command to create a soft link to the trimmed reads from the [quality control tutorial](https://github.com/ESR-NZ/Training/tree/main/Rhys_Toolbox/01_Quality_control):
+To create a soft link, use the `ln` command with the `-s` option, followed by the path to the file or directory you want to link, and the name of the soft link you wish to create. Edit this command to create a soft link to the trimmed reads from the [quality control tutorial](https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_04):
 
 ```bash
 # Create a soft link to the file with forward paired-end reads:
