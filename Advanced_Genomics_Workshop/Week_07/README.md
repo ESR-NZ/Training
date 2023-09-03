@@ -105,7 +105,12 @@ Keep in mind that if you encounter difficulties or can't recall certain details,
 
 Once `Flye` completes the assembly, you will find several output files in the specified `<output_directory>`. The primary assembly output will be in the `assembly.fasta` file, which contains the assembled genome. You can use tools like `QUAST` to assess the quality and completeness of your assembly. Remember, we used `QUAST` in [week 06](https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_06) 
 
-<Rhys to add questions>
+#### Questions
+
+**After generating the `assembly.fasta`, and Log files, and assebly quality metrics (`QUAST`) extract the following information about the assembly:**<br>
+**(a) Estimated genome coverage**<br>
+**(b) Number of contigs**<br>
+**(c) Total genome length**<br>
 
 ### Polishing an assembly generated from nanopore reads using racon
 
@@ -164,19 +169,29 @@ Replace `[options]` with specific parameters and replace the file names within `
 Here's an example command:
 
 ```bash
-racon -m 8 -x -6 -g -8 -w 500 -t 2 ${SAMPLE}_filtered_ONT.fastq.gz ${SAMPLE}_minimap2.paf ${SAMPLE}_flye.fasta > ${SAMPLE}_flye_racon.fasta
+racon --match 8 --mismatch -6 --gap -8 --window-length 500 --threads 2 ${SAMPLE}_filtered_ONT.fastq.gz ${SAMPLE}_minimap2.paf ${SAMPLE}_flye.fasta > ${SAMPLE}_flye_racon.fasta
 ```
 
 Explanation of the command options:
 
-- -t <num_threads>: Specify the number of CPU threads to use for polishing.
-- -m 8: Set the minimum coverage required for a consensus base.
-- -x -6 -g -8 -w 500: Fine-tune the scoring parameters for consensus calling.
-- <nanopore_reads.fastq>: Input nanopore sequencing data.
-- <initial_assembly.fasta>: Input initial assembly.
-- polished_assembly.fasta: Output polished assembly file.
+- `--match`: set the minimum coverage required for a consensus base.
+- `--mismatch`: score for mismatching bases.
+- `--gap`: gap penalty (must be negative).
+- `--window-length`: size of window on which partial order alignment (POA) is performed.
+- `--threads`: specify the number of CPU threads to use for polishing.
+- `${SAMPLE}_filtered_ONT.fastq.gz`: Input nanopore sequencing data.
+- `${SAMPLE}_minimap2.paf`: the PAF alignment/map file where the mapped reads will be saved.
+- `${SAMPLE}_flye.fasta`: Input initial assembly.
+- `${SAMPLE}_flye_racon.fasta`: Output polished assembly file.
 
-Run this command, and Racon will generate a polished assembly in the polished_assembly.fasta file.
+Once `racon` completes polishing the assembly, you will find several output files in the specified `<output_directory>`. The primary assembly output will be in the `assembly.fasta` file, which contains the assembled genome. You can use tools like `QUAST` to assess the quality and completeness of your assembly. Remember, we used `QUAST` in [week 06](https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_06) 
+
+#### Questions
+
+**After generating the polished assembly file (e.g., `${SAMPLE}_flye_racon.fasta`), and Log files, please compare the total genome length to the unpolished assembly**
+
+### Polishing an assembly generated from nanopore reads using medaka
+
 
 
 
