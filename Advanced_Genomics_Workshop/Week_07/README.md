@@ -11,9 +11,8 @@ Table of contents
    * [Introduction](#introduction)
    * [Let's get started...](#lets-get-started)
       * [Read _De Novo_ Assembly](#read-de-novo-assembly)
-      * [_De novo_ assembly of Illumina sequence reads with Velvet](#de-novo-assembly-of-illumina-sequence-reads-with-velvet)
-      * [_De novo_ assembly of Illumina sequence reads with SPAdes](#de-novo-assembly-of-illumina-sequence-reads-with-spades)
-      * [Analyse the draft assembly metrics](#analyse-the-draft-assembly-metrics)      
+      * [_De novo_ assembly of nanopore sequence reads with Flye](#de-novo-assembly-of-nanopore-sequence-reads-with-flye)
+      * [Analyse the assembly metrics](#analyse-the-assembly-metrics)      
       * [Conquering Taxonomic Classification with Kraken2](#conquering-taxonomic-classification-with-kraken2)  
    * [Why have I learnt this?](#why-have-i-learnt-this)
    * [Final notes](#final-notes)
@@ -77,8 +76,16 @@ ls
 
 To obtain more information about the `ln` command and its available options, you can execute the command `ln --help`.
 
+### Read _De Novo_ Assembly
 
+The next step is assembling the nanopore reads into contigs using a _de novo_ assembler. Many _de novo_ assemblers are available, but today we will focus on Flye ([Lin et al. 2016](
+https://doi.org/10.1073/pnas.1604560113); [Kolmogorov et al. 2020](https://doi.org/10.1038/s41587-019-0072-8)).
 
+Remember to cite the paper:
+
+&emsp; Kolmogorov M, Yuan J, Lin Y, Pevzner PA. Assembly of long, error-prone reads using repeat graphs. _Nature Biotechnology_ 2019;37:540-546 doi [10.1038/s41587-019-0072-8](https://doi.org/10.1038/s41587-019-0072-8)
+
+### _De novo_ assembly of nanopore sequence reads with Flye
 
 
 
