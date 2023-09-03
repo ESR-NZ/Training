@@ -25,7 +25,7 @@ To fully benefit from these exercises, it is essential that you manually _type_ 
 
 Before we begin, you should have a basic understanding of genomics and the concept of DNA sequencing. You should also be familiar with the command line and have access to a Unix-based operating system (such as Linux or macOS).
 
-Prior completion of the sequence data [quality control tutorial](https://github.com/ESR-NZ/Training/tree/main/Rhys_Toolbox/01_Quality_control) is needed. We will analyse the same sequence data in that tutorial for time efficiency.
+Prior completion of the week 04 sequence data [quality control tutorial](https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_04) is needed. We will analyse the same sequence data in that tutorial for time efficiency.
 
 ## Introduction
 
