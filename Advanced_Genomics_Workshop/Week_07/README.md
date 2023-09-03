@@ -12,6 +12,7 @@ Table of contents
    * [Let's get started...](#lets-get-started)
       * [Read _de novo_ assembly](#read-de-novo-assembly)
       * [_De novo_ assembly of nanopore sequence reads with Flye](#de-novo-assembly-of-nanopore-sequence-reads-with-flye)
+      * [Polishing an assembly generated from nanopore reads using racon](Polishing-an-assembly-generated-from-nanopore-reads-using-racon)
       * [Analyse the assembly metrics](#analyse-the-assembly-metrics)      
       * [Conquering Taxonomic Classification with Kraken2](#conquering-taxonomic-classification-with-kraken2)  
    * [Why have I learnt this?](#why-have-i-learnt-this)
@@ -90,7 +91,7 @@ Remember to cite the paper:
 Now that you have your sequence data organised, it's time to generate an assembly. You can use the following command as a starting point:
 
 ```bash
-flye --nano-hq nanopore_reads.fastq.gz --genome-size 4.1m --threads 2 --iterations 3 --out-dir <output_directory>
+flye --nano-hq <nanopore_reads>.fastq.gz --genome-size 4.1m --threads 2 --iterations 3 --out-dir <output_directory>
 ```
 
 - `--nano-hq`: This flag indicates that you are using nanopore reads for assembly (New `--nano-hq` mode for ONT Guppy5+ (SUP mode) and Q20 reads (3-5% error rate))
@@ -106,10 +107,76 @@ Once `Flye` completes the assembly, you will find several output files in the sp
 
 <Rhys to add questions>
 
-### Polishing an assembly generated from nanopore reads using Racon
+### Polishing an assembly generated from nanopore reads using racon
 
-We can improve the quality of an assembly using `Racon`, a tool specifically designed for polishing long-read genome assemblies. Polishing is a critical step in the genome assembly process, as it helps correct errors and improve the accuracy of the final assembly.
+We can improve the quality of an assembly using `racon`, a tool specifically designed for polishing long-read genome assemblies. Polishing is a critical step in the genome assembly process, as it helps correct errors and improve the accuracy of the final assembly.
 
+#### Data preparation
+
+Ensure you have the following files ready:
+
+- Nanopore sequencing data in `FASTQ` format (i.e., 22AR0430_filtered_ONT.fastq.gz)
+- An initial assembly of the genome in `FASTA` format (i.e., 22AR0430.fasta)
+
+Please make sure these files are located in the same directory where you plan to run `racon`.
+
+#### Polishing with racon
+
+Now, let's proceed with polishing your initial assembly using `racon`. But, before we run `racon`, we will need to map our long reads to our assembly.
+To do this, we will use `minimap2`. The basic workflow is as follows:
+
+##### 1) Index the assembly
+Before mapping the nanopore reads, you need to index the assembled genome using `minimap2`. 
+This will generate a transformed version of the assembly that allows `minimap2` to efficiently map sequences to it. 
+You can use the following command as a starting point/guide:
+
+```bash
+minimap2 -d <assembly>.mmi <assembly>.fasta
+```
+
+The above command creates an index file called `assembly.mmi` from your assembled genome (`assembly`.fasta).
+Please replace `<assembly>` with the name of your genome.
+
+##### 2) Map nanopore reads to the assembly
+
+Now, you can map your nanopore reads to the indexed assembled genome using `minimap2`. 
+You can use the following command as a starting point/guide:
+
+```bash
+minimap2 -x map-ont -t 2 ${SAMPLE}.mmi ${SAMPLE}_filtered_ONT.fastq.gz > ${SAMPLE}_minimap2.paf
+```
+
+- `-x map-ont`: specifies that you are using nanopore reads.
+- `${SAMPLE}.mmi`: the index file created in step 1.
+- `${SAMPLE}_filtered_ONT.fastq.gz`: is your nanopore sequencing data.
+- `${SAMPLE}_minimap2.paf`: the PAF alignment/map file where the mapped reads will be saved. PAF is the default output format of `minimap2`
+
+##### 3) Let's run racon
+
+Now, let's proceed with polishing your initial assembly using `racon`. 
+You can use the following command as a starting point/guide:
+
+```bash
+racon [options] <input_reads.fastq> <input_assembly.fasta> <output_polished.fasta>
+```
+
+Replace `[options]` with specific parameters and replace the file names within `<>` with the actual file names. 
+Here's an example command:
+
+```bash
+racon -m 8 -x -6 -g -8 -w 500 -t 2 ${SAMPLE}_filtered_ONT.fastq.gz ${SAMPLE}_minimap2.paf ${SAMPLE}_flye.fasta > ${SAMPLE}_flye_racon.fasta
+```
+
+Explanation of the command options:
+
+- -t <num_threads>: Specify the number of CPU threads to use for polishing.
+- -m 8: Set the minimum coverage required for a consensus base.
+- -x -6 -g -8 -w 500: Fine-tune the scoring parameters for consensus calling.
+- <nanopore_reads.fastq>: Input nanopore sequencing data.
+- <initial_assembly.fasta>: Input initial assembly.
+- polished_assembly.fasta: Output polished assembly file.
+
+Run this command, and Racon will generate a polished assembly in the polished_assembly.fasta file.
 
 
 
