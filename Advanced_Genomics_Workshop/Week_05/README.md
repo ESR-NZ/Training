@@ -152,7 +152,7 @@ The `FastQC` reports provide information about the quality of the sequencing dat
 
 ### Filtering and trimming of long-read sequencing data using nanofilt
 
-`nanoQC` is a tool that provides various metrics and visualisations to assess the quality and characteristics of long-read sequencing ONT sequencing data. This section will cover the basics for using `nanoQC` to check the quality of your ONT sequence reads.
+`NanoFilt` is a tool that is designed to filter and preprocess raw nanopore sequencing data to improve its quality and usability for downstream analysis. It helps researchers remove low-quality reads, trim adapters, and perform various data quality control steps. This section will cover the basics for using `NanoFilt` to check the quality of your ONT sequence reads.
 
 For information for `NanoFilt` can be found here: [https://github.com/wdecoster/nanofilt](https://github.com/wdecoster/nanofilt)
 
