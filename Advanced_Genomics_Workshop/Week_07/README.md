@@ -12,7 +12,7 @@ Table of contents
    * [Let's get started...](#lets-get-started)
       * [Read _de novo_ assembly](#read-de-novo-assembly)
       * [_De novo_ assembly of nanopore sequence reads with Flye](#de-novo-assembly-of-nanopore-sequence-reads-with-flye)
-      * [Polishing an assembly generated from nanopore reads using racon](polishing-an-assembly-generated-from-nanopore-reads-using-racon)
+      * [Polishing an assembly generated from nanopore reads using racon](#polishing-an-assembly-generated-from-nanopore-reads-using-racon)
       * [Analyse the assembly metrics](#analyse-the-assembly-metrics)      
       * [Conquering Taxonomic Classification with Kraken2](#conquering-taxonomic-classification-with-kraken2)  
    * [Why have I learnt this?](#why-have-i-learnt-this)
