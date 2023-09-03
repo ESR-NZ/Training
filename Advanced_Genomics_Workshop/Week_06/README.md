@@ -10,7 +10,7 @@ Table of contents
    * [Prerequisites](#prerequisites)
    * [Introduction](#introduction)
    * [Let's get started...](#lets-get-started)
-      * [Read _De Novo_ Assembly](#read-de-novo-assembly)
+      * [Read _de novo_ assembly](#read-de-novo-assembly)
       * [_De novo_ assembly of Illumina sequence reads with Velvet](#de-novo-assembly-of-illumina-sequence-reads-with-velvet)
       * [_De novo_ assembly of Illumina sequence reads with SPAdes](#de-novo-assembly-of-illumina-sequence-reads-with-spades)
       * [Analyse the draft assembly metrics](#analyse-the-draft-assembly-metrics)      
@@ -85,7 +85,7 @@ ls
 
 To obtain more information about the `ln` command and its available options, you can execute the command `ln --help`.
 
-### Read _De Novo_ Assembly
+### Read _de novo_ assembly
 
 The next step is assembling the high-quality reads into contigs using a _de novo_ assembler. Many _de novo_ assemblers are available, but today we will focus on Velvet ([Zerbino et al. 2008](https://doi.org/10.1101/gr.074492.107)) and SPAdes ([Bankevich et al. 2012](https://doi.org/10.1089/cmb.2012.0021)). These assemblers use different algorithms and heuristics to assemble the reads, so it is essential to test and compare the performance of multiple assemblers on your specific dataset. We will evaluate how varying k-mer lengths can impact the assembly process.
 
