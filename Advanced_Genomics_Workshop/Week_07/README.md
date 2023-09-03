@@ -104,6 +104,12 @@ Keep in mind that if you encounter difficulties or can't recall certain details,
 
 Once `Flye` completes the assembly, you will find several output files in the specified `<output_directory>`. The primary assembly output will be in the `assembly.fasta` file, which contains the assembled genome. You can use tools like `QUAST` to assess the quality and completeness of your assembly. Remember, we used `QUAST` in [week 06](https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_06) 
 
+<Rhys to add questions>
+
+### Polishing an assembly generated from nanopore reads using Racon
+
+We can improve the quality of an assembly using `Racon`, a tool specifically designed for polishing long-read genome assemblies. Polishing is a critical step in the genome assembly process, as it helps correct errors and improve the accuracy of the final assembly.
+
 
 
 
