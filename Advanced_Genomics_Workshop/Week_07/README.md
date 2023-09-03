@@ -10,7 +10,7 @@ Table of contents
    * [Prerequisites](#prerequisites)
    * [Introduction](#introduction)
    * [Let's get started...](#lets-get-started)
-      * [Read _De Novo_ Assembly](#read-de-novo-assembly)
+      * [Read _de novo_ assembly](#read-de-novo-assembly)
       * [_De novo_ assembly of nanopore sequence reads with Flye](#de-novo-assembly-of-nanopore-sequence-reads-with-flye)
       * [Analyse the assembly metrics](#analyse-the-assembly-metrics)      
       * [Conquering Taxonomic Classification with Kraken2](#conquering-taxonomic-classification-with-kraken2)  
@@ -76,10 +76,10 @@ ls
 
 To obtain more information about the `ln` command and its available options, you can execute the command `ln --help`.
 
-### Read _De Novo_ Assembly
+### Read _de novo_ assembly
 
 The next step is assembling the nanopore reads into contigs using a _de novo_ assembler. Many _de novo_ assemblers are available, but today we will focus on Flye ([Lin et al. 2016](
-https://doi.org/10.1073/pnas.1604560113); [Kolmogorov et al. 2020](https://doi.org/10.1038/s41587-019-0072-8)).
+https://doi.org/10.1073/pnas.1604560113); [Kolmogorov et al. 2020](https://doi.org/10.1038/s41587-019-0072-8)). Please note that you should have Flye and its dependencies installed on your system before proceeding. You can find more information about the Flye genome assembler from its GitHub repository [https://github.com/fenderglass/Flye](https://github.com/fenderglass/Flye).
 
 Remember to cite the paper:
 
@@ -87,6 +87,22 @@ Remember to cite the paper:
 
 ### _De novo_ assembly of nanopore sequence reads with Flye
 
+Now that you have your sequence data organised, it's time to generate an assembly. You can use the following command as a starting point:
+
+```bash
+flye --nano-hq nanopore_reads.fastq.gz --genome-size 4.1m --threads 2 --iterations 3 --out-dir <output_directory>
+```
+
+- `--nano-hq`: This flag indicates that you are using nanopore reads for assembly (New `--nano-hq` mode for ONT Guppy5+ (SUP mode) and Q20 reads (3-5% error rate))
+- `nanopore_reads.fastq.gz`: Replace this with the actual name of your nanopore read file.
+- `--genome-size size`: Estimated genome size (for example, 5m or 2.6g)
+- `--threads`: Number of parallel threads (CPUs)
+- `--iterations`: Number of polishing iterations
+- `--out-dir`: Specify the output folder where `Flye` will store the assembly results. Please replace `<output_directory>` with the name of the directory where you want to save the output files.
+
+Keep in mind that if you encounter difficulties or can't recall certain details, you can use `flye --help` which will display helpful documentation.
+
+Once `Flye` completes the assembly, you will find several output files in the specified `<output_directory>`. The primary assembly output will be in the `assembly.fasta` file, which contains the assembled genome. You can use tools like `QUAST` to assess the quality and completeness of your assembly. Remember, we used `QUAST` in [week 06](https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_06) 
 
 
 
