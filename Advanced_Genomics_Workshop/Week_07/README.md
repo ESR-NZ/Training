@@ -184,19 +184,59 @@ Explanation of the command options:
 - `${SAMPLE}_flye.fasta`: Input initial assembly.
 - `${SAMPLE}_flye_racon.fasta`: Output polished assembly file.
 
-Once `racon` completes polishing the assembly, you will find several output files in the specified `<output_directory>`. The primary assembly output will be in the `assembly.fasta` file, which contains the assembled genome. You can use tools like `QUAST` to assess the quality and completeness of your assembly. Remember, we used `QUAST` in [week 06](https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_06) 
+Once `racon` completes polishing the assembly, you will find the output `${SAMPLE}_flye_racon.fasta` in the directory where you ran the command. You can use tools like `QUAST` to assess the quality and completeness of your assembly. Remember, we used `QUAST` in [week 06](https://github.com/ESR-NZ/Training/tree/main/Advanced_Genomics_Workshop/Week_06) 
 
-#### Questions
+#### Question
 
 **After generating the polished assembly file (e.g., `${SAMPLE}_flye_racon.fasta`), and Log files, please compare the total genome length to the unpolished assembly**
 
 ### Polishing an assembly generated from nanopore reads using medaka
 
+`medaka` is a powerful tool developed by ONT (Oxford Nanopore Technologies) for polishing nanopore-based assemblies.
 
+#### Data preparation
 
+Ensure you have the following files ready:
 
-ONT sequence data Assembly
+- Nanopore sequencing data in `FASTQ` format (i.e., 22AR0430_filtered_ONT.fastq.gz)
+- The polished assembly of the genome in `FASTA` format (i.e., 22AR0430_flye_racon.fasta)
 
+Please make sure these files are located in the same directory where you plan to run `medaka`.
 
-Notes
-medaka_consensus -d .fasta -i ONT.fastq.gz -o medaka_test
+#### Polishing with medaka
+
+Now, let's proceed with polishing your initial assembly using `medaka`. The basic command structure is as follows:
+
+```bash
+medaka_consensus -i <nanopore_reads.fastq.gz> -d <racon_polished_assembly.fasta> -o <output_directory>
+```
+
+Replace `<nanopore_reads.fastq.gz>`, `<racon_polished_assembly.fasta>`, and `<output_directory>` with specific file paths and directory names. 
+Here's an example command:
+
+```bash
+medaka_consensus -d ${SAMPLE}_flye_racon.fasta -i ${SAMPLE}_filtered_ONT.fastq.gz -o ${SAMPLE}_medaka -t 2 -m r941_min_hac_g507
+```
+
+`medaka` will generate polished assemblies and other output files in the specified output directory.
+
+Once `medaka` completes polishing the assembly, you will find several output files in the specified `<output_directory>`. The primary assembly output will be in the `assembly.fasta` file, which contains the assembled genome. You can use tools like `QUAST` to assess the quality and completeness of your assembly. 
+
+#### Question
+
+**After generating the medaka polished assembly file (e.g., `${SAMPLE}_medaka.fasta`), and Log files, please compare the total genome length to the unpolished and racon polished assembly**
+
+## Why have I learnt this?
+
+You have learned to use `flye` as its is a popular and widely used _de novo_ genome assembly tools that handle long-read sequence data.
+
+`quast` is a commonly used tool for assessing the quality of genome assemblies. `quast` allows you to compare the accuracy and completeness of different assemblies. 
+
+`racon` and `medaka` are tools used for polishing out potential errors within nanopore-based assemblies.
+
+These tools help ensure that the genome assembly is high quality and can be used for downstream analyses.
+
+## Whakamihi! You did it!
+
+That's it for this tutorial on _de novo_ genome assembly using long-read sequence data! You have assembled your long-read sequence data into a draft genome using `flye`, and have successfully used `quast` to assess the quality metrics of your genome assemblies. You have also used read mapping approaches to generate a concensous to polish out any errors that may have come about during the initial assembly process. If you have any further questions, feel free to ask.
+
