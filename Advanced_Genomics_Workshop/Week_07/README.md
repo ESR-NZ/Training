@@ -90,7 +90,7 @@ Remember to cite the paper:
 Now that you have your sequence data organised, it's time to generate an assembly. You can use the following command as a starting point:
 
 ```bash
-flye --nano-hq <nanopore_reads>.fastq.gz --genome-size 4.1m --threads 2 --iterations 3 --out-dir <output_directory>
+flye --nano-hq <nanopore_reads>.fastq.gz --genome-size 5.2m --threads 2 --iterations 3 --out-dir <output_directory>
 ```
 
 - `--nano-hq`: This flag indicates that you are using nanopore reads for assembly (New `--nano-hq` mode for ONT Guppy5+ (SUP mode) and Q20 reads (3-5% error rate))
