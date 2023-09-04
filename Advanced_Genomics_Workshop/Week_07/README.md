@@ -113,7 +113,12 @@ Once `Flye` completes the assembly, you will find several output files in the sp
 
 ### Polishing an assembly generated from nanopore reads using racon
 
-We can improve the quality of an assembly using `racon`, a tool specifically designed for polishing long-read genome assemblies. Polishing is a critical step in the genome assembly process, as it helps correct errors and improve the accuracy of the final assembly.
+We can improve the quality of an assembly using `racon`, a tool specifically designed for polishing long-read genome assemblies. Polishing is a critical step in the genome assembly process, as it helps correct errors and improve the accuracy of the final assembly. You can find more information about the `racon` genome polishing tool from its GitHub repository [https://github.com/isovic/racon](https://github.com/isovic/racon)
+
+Remember to cite the paper:
+
+&emsp; Vaser R, Sović I, Nagarajan N, Šikić M. Fast and accurate _de novo_ genome assembly from long uncorrected reads. _Genome Research_ 2017;27:737-746 doi: [10.1101/gr.214270.116](https://doi.org/10.1101/gr.214270.116)
+
 
 #### Data preparation
 
@@ -191,7 +196,7 @@ Once `racon` completes polishing the assembly, you will find the output `${SAMPL
 
 ### Polishing an assembly generated from nanopore reads using medaka
 
-`medaka` is a powerful tool developed by ONT (Oxford Nanopore Technologies) for polishing nanopore-based assemblies.
+`medaka` is a powerful tool developed by ONT (Oxford Nanopore Technologies) for polishing nanopore-based assemblies. You can find more information about the `medaka` genome polishing tool from its GitHub repository [https://github.com/nanoporetech/medaka](https://github.com/nanoporetech/medaka)
 
 #### Data preparation
 
