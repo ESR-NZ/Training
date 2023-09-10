@@ -32,11 +32,12 @@ Week 2: Conquering the command line with confidence<br>
 Week 3: Navigating read-mapping files<br>
 Week 4: Short-read sequence data quality control<br>
 Week 5: Long-read sequence data quality control<br>
-Week 6: Assembling a genome using sequence data<br>
-_Week 7: Multi-locus sequencing typing, antibiotic resistance gene detection<br>
-Week 8: Phylogenetics<br>
-Week 9: Amplicon sequencing<br>
-Week 10: Using Jupyter Notebooks_
+Week 6: Assembling a genome using short-read sequence data<br>
+Week 7: Assembling a genome using long-read sequence data<br>
+_Week8: Multi-locus sequencing typing, antibiotic resistance gene detection<br>
+Week 9: Phylogenetics<br>
+Week 10: Amplicon sequencing<br>
+Week 11: Using Jupyter Notebooks_
 
 
 ## A final note...
