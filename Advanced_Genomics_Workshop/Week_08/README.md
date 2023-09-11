@@ -179,14 +179,14 @@ For more advanced options and settings, refer to the Abricate documentation: [ht
 
 If you use ResFinder in your research, remember to cite the paper:
 
-&emsp; Bolger AM, Lohse M, Usadel B. Trimmomatic: a flexible trimmer for Illumina sequence data. _Bioinformatics_ 2014;30:2114-2120 doi: [10.1093/bioinformatics/btu170](https://doi.org/10.1093/bioinformatics/btu170)
+&emsp; Zankari E, Hasman H, Cosentino S, Vestergaard M, Rasmussen S, Lund O, Aarestrup FM, Larsen MV. Identification of acquired antimicrobial resistance genes. _Journal of Antimicrobial Chemotherapy_ 2012;67:2640-2644 doi: [https://doi.org/10.1093/jac/dks261](https://doi.org/10.1093/jac/dks261)
 
-
-Zankari E, Hasman H, Cosentino S, Vestergaard M, Rasmussen S, Lund O, Aarestrup FM, Larsen MV. Identification of acquired antimicrobial resistance genes. _Journal of Antimicrobial Chemotherapy_ 2012;67:2640-2644 doi: [https://doi.org/10.1093/jac/dks261](https://doi.org/10.1093/jac/dks261)
+**Question**<br>
+**(i) Based on your analysis, which antibiotic resistance genes does each of the 2016 ESBL-producing _E. coli_ genomes carry?**<br>
 
 
 Rhys to do
-<phylogenetics>
+phylogenetics
 
 
 
