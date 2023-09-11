@@ -195,8 +195,7 @@ phylogenetics
 -
 
 ## Whakamihi! You did it!
-
--
+That's it for this tutorial on MLST and screeening genome assemblies for antibiotic resistance genes! You have investigated the MLST profile of assemblies using `mlst`, successfully used `abricate` to identify any antibiotic resistance genes present in your DNA sequences. If you have any further questions, feel free to ask.
 
 ###### Final notes
 
