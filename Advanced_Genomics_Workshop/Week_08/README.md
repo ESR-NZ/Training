@@ -14,7 +14,7 @@ Table of contents
    * [Introduction](#introduction)
    * [Let's get started...](#lets-get-started)
       * [Identifying MLST profiles in draft _E. coli_ assemblies using the tool mlst](#identifying-mlst-profiles-in-draft-e-coli-assemblies-using-the-tool-mlst)
-      * [_De novo_ assembly of nanopore sequence reads with Flye](#de-novo-assembly-of-nanopore-sequence-reads-with-flye)
+      * [Identifying antibiotic resistance profiles in draft _E. coli_ assemblies using the tool abricate](#identifying-antibiotic-resistance-profiles-in-draft-E-coli-assemblies-using-the-tool-abricate)
       * [Polishing an assembly generated from nanopore reads using racon](#polishing-an-assembly-generated-from-nanopore-reads-using-racon)
       * [Polishing an assembly generated from nanopore reads using medaka](#polishing-an-assembly-generated-from-nanopore-reads-using-medaka)
    * [Why have I learnt this?](#why-have-i-learnt-this)
@@ -156,6 +156,16 @@ You can identify the MLST profiles for your _E. coli_ draft assemblies based on 
 
 **Question**<br>
 **(i) Based on your analysis, which MLST profile does each of the 2016 ESBL-producing _E. coli_ genomes belong to?**<br>
+
+### Identifying antibiotic resistance profiles in draft _E. coli_ assemblies using the tool abricate
+
+Next, I'll walk you through how to use a tool called `Abricate` and an antibiotic resistane gene database called `ResFinder` to identify antibiotic resistance genes in bacterial genomes.
+
+#### Running abricate
+
+To search for antibiotic resistance genes, use the following command:
+
+
 
 Rhys to do
 <abricate>
