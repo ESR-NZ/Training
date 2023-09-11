@@ -53,7 +53,7 @@ You have been given five `fasta` files. Among these files, those beginning with 
 
 ESR contributes to the national public health surveillance of antibiotic resistance among human pathogens ([https://www.esr.cri.nz/our-research/nga-kete/infectious-disease-intelligence/antimicrobial-resistance-amr/](https://www.esr.cri.nz/our-research/nga-kete/infectious-disease-intelligence/antimicrobial-resistance-amr/)) in Aotearoa New Zealand. Until 2005, diagnostic laboratories referred all ESBL-producing Enterobacterales (ESBL-E) isolates to ESR for confirmation. This continuous surveillance was discontinued in August 2005 and replaced with annual 31-day surveys, typically in August (available at [https://www.esr.cri.nz/our-research/nga-kete/infectious-disease-intelligence/antimicrobial-resistance-amr/](https://www.esr.cri.nz/our-research/nga-kete/infectious-disease-intelligence/antimicrobial-resistance-amr/)).
 
-These four draft genome assemblies come from the 2016 survey:
+These four draft genome assemblies come from the 2016 survey:<br>
 
 &emsp; **Heffernan H, Woodhouse R, Draper J, Ren X**. 2016 survey of extended-spectrum β-lactamase-producing Enterobacteriaceae. Porirua, New Zealand: Antimicrobial Reference Laboratory and Health Group, Institute of Environmental Science and Research Limited; 2018. Available from: [https://surv.esr.cri.nz/antimicrobial/esbl.php](https://surv.esr.cri.nz/antimicrobial/esbl.php) [Accessed 09 July 2021]
 
