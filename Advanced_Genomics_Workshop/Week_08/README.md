@@ -4,7 +4,7 @@ Phylogenetics
 #### Author: Rhys White ([@RhysTWhite](https://twitter.com/RhysTWhite))
 #### Affiliations: Institute of Environmental Science and Research - ESR
 
-# Advanced Genomic Insights Workshop Week 08:<br> A tutorial on phylogenetics
+# Advanced Genomic Insights Workshop Week 08:<br> A tutorial on Multi-Locus Sequence Typing and Screeening Genome Assemblies for Antibiotic Resistance Genes
 
 Table of contents
 =================
@@ -165,10 +165,27 @@ Next, I'll walk you through how to use a tool called `Abricate` and an antibioti
 
 To search for antibiotic resistance genes, use the following command:
 
+```bash
+abricate --db resfinder --minid 90 --mincov 60 ${SAMPLE}.fasta
+```
+
+Replace `${SAMPLE}.fasta` with the path and name of your bacterial genome in `fasta` format.
+
+Abricate will generate a report in tab-separated values (TSV) format.<br>
+The report will list the antibiotic resistance genes found in the input genome, their start and end positions, percent identity, and other information.<br>
+You can use tools like Excel, LibreOffice Calc, or Python libraries like Pandas to visualize and analyze the results for a more comprehensive understanding.<br>
+
+For more advanced options and settings, refer to the Abricate documentation: [https://github.com/tseemann/abricate](https://github.com/tseemann/abricate)
+
+If you use ResFinder in your research, remember to cite the paper:
+
+&emsp; Bolger AM, Lohse M, Usadel B. Trimmomatic: a flexible trimmer for Illumina sequence data. _Bioinformatics_ 2014;30:2114-2120 doi: [10.1093/bioinformatics/btu170](https://doi.org/10.1093/bioinformatics/btu170)
+
+
+Zankari E, Hasman H, Cosentino S, Vestergaard M, Rasmussen S, Lund O, Aarestrup FM, Larsen MV. Identification of acquired antimicrobial resistance genes. _Journal of Antimicrobial Chemotherapy_ 2012;67:2640-2644 doi: [https://doi.org/10.1093/jac/dks261](https://doi.org/10.1093/jac/dks261)
 
 
 Rhys to do
-<abricate>
 <phylogenetics>
 
 
