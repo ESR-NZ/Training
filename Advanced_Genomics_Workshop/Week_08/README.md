@@ -189,12 +189,39 @@ If you use ResFinder in your research, remember to cite the paper:
 **Question**<br>
 **(i) Based on your analysis, which antibiotic resistance genes does each of the 2016 ESBL-producing _E. coli_ genomes carry?**<br>
 
+### Identifying antibiotic resistance profiles in draft _E. coli_ assemblies using the tool abricate
 
-Rhys to do
-phylogenetics
+`parsnp` is a bioinformatics tool designed for whole-genome alignment and Single Nucleotide Variant (SNV) analysis of closely related bacterial genomes. It is particularly useful for comparative genomics, phylogenetic analysis, and identifying genetic variations among a set of genomes.
+
+You can find the `parsnp` manual by following this link: [https://github.com/marbl/parsnp](https://github.com/marbl/parsnp)
+
+First, please make sure you have all the bacterial genome sequences you want to analyse in `fasta` format. Place them in a directory (e.g., assemblies/) for easy access.
+
+You can now use `parsnp` to perform genome alignment and SNv analysis. Here's a basic command to run `parsnp`:
+
+```bash
+parsnp --reference <reference_genome.fasta> --sequences assemblies/ --output-dir <output_directory> -p 4 -c
+```
+
+Explanation of the command options:
+
+- `--sequences` or `-d`: A list of files containing genomes/contigs/scaffolds
+- `--output-dir` or `-o`: Specify the directory where Parsnp will save its output files
+- `--reference` or `-r`: Choose one of your genome sequences to serve as the reference for alignment and SNV calling
+
+**Rhys to finsh!**
+
 ```bash
 parsnp -r EC958.fasta -d assemblies/ -o 20230911_Ecoli_parsnp_refEC958 -p 4 -c
 ```
+
+Once `parsnp` completes the analysis, you'll find several output files in the specified output directory. Here are some of the key files:
+
+- `parsnp.xmfa`: This is the Multiple Sequence Alignment (MSA) file in XMFA format, which contains the aligned sequences of all input genomes
+- `parsnp.ggr`: A graphical representation of the core genome alignment
+
+You can use the SNP information to generate phylogenetic trees or perform other downstream analyses to understand genetic variation among your bacterial genomes.
+
 
 ## Why have I learnt this?
 
