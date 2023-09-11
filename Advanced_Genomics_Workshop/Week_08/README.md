@@ -13,7 +13,7 @@ Table of contents
    * [Prerequisites](#prerequisites)
    * [Introduction](#introduction)
    * [Let's get started...](#lets-get-started)
-      * [Identifying MLST profiles in draft _E. coli_ assemblies using the tool mlst](#identifying-MLST-profiles-in-draft-E.-coli-assemblies-using-the-tool-mlst)
+      * [Identifying MLST profiles in draft _E. coli_ assemblies using the tool mlst](#identifying-mlst-profiles-in-draft-e.-coli-assemblies-using-the-tool-mlst)
       * [_De novo_ assembly of nanopore sequence reads with Flye](#de-novo-assembly-of-nanopore-sequence-reads-with-flye)
       * [Polishing an assembly generated from nanopore reads using racon](#polishing-an-assembly-generated-from-nanopore-reads-using-racon)
       * [Polishing an assembly generated from nanopore reads using medaka](#polishing-an-assembly-generated-from-nanopore-reads-using-medaka)
