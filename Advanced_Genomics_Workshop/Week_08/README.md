@@ -154,9 +154,32 @@ mlst --scheme ecoli_4 16AR1035_skesa.fasta >> 16AR1035_MLST.tsv
 Each sample's MLST profile is displayed, including the sequence type (ST) and allele numbers for each housekeeping gene.
 You can identify the MLST profiles for your _E. coli_ draft assemblies based on these results.
 
+**Question**<br>
+**(i) Based on your analysis, which MLST profile does each of the 2016 ESBL-producing _E. coli_ genomes belong to?**<br>
+
+Rhys to do
+<abricate>
+<phylogenetics>
 
 
 
+## Why have I learnt this?
+
+-
+
+## Whakamihi! You did it!
+
+-
+
+###### Final notes
+
+<sup> This tutorial uses example paired-end short-read sequencing data from our 2016 survey of extended-spectrum beta-lactamase-producing Enterobacterales. I invite you to read our report if you find this data intriguing: <sup>
 
 
+<sub> &emsp; **Heffernan H, Woodhouse R, Draper J, Ren X**. 2016 survey of extended-spectrum β-lactamase-producing Enterobacteriaceae. Porirua, New Zealand: Antimicrobial Reference Laboratory and Health Group, Institute of Environmental Science and Research Limited; 2018. Available from: [https://www.esr.cri.nz/our-research/nga-kete/infectious-disease-intelligence/antimicrobial-resistance-amr/](https://www.esr.cri.nz/our-research/nga-kete/infectious-disease-intelligence/antimicrobial-resistance-amr/) [Accessed 09 July 2021]<sub> 
 
+###### Data availability
+
+<sub> Sequence read data has been submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) under BioProject [PRJNA531554](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA531554) <sub>
+
+<sub> Raw Illumina sequence read data have been deposited to the NCBI SRA under the accession numbers [SRR10286073, SRR10286105, SRR10286115, and SRR10286317](https://www.ncbi.nlm.nih.gov/sra/?term=https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA531554) <sub>
