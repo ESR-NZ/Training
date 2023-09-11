@@ -15,7 +15,7 @@ Table of contents
    * [Let's get started...](#lets-get-started)
       * [Identifying MLST profiles in draft _E. coli_ assemblies using the tool mlst](#identifying-mlst-profiles-in-draft-e-coli-assemblies-using-the-tool-mlst)
       * [Identifying antibiotic resistance profiles in draft _E. coli_ assemblies using the tool abricate](#identifying-antibiotic-resistance-profiles-in-draft-E-coli-assemblies-using-the-tool-abricate)
-      * [Polishing an assembly generated from nanopore reads using racon](#polishing-an-assembly-generated-from-nanopore-reads-using-racon)
+      * [Reconstructing a phylogeny](#reconstructing-a-phylogeny)
       * [Polishing an assembly generated from nanopore reads using medaka](#polishing-an-assembly-generated-from-nanopore-reads-using-medaka)
    * [Why have I learnt this?](#why-have-i-learnt-this)
    * [Final notes](#final-notes)
@@ -189,7 +189,7 @@ If you use ResFinder in your research, remember to cite the paper:
 **Question**<br>
 **(i) Based on your analysis, which antibiotic resistance genes does each of the 2016 ESBL-producing _E. coli_ genomes carry?**<br>
 
-### Identifying antibiotic resistance profiles in draft _E. coli_ assemblies using the tool abricate
+### Reconstructing a phylogeny
 
 `parsnp` is a bioinformatics tool designed for whole-genome alignment and Single Nucleotide Variant (SNV) analysis of closely related bacterial genomes. It is particularly useful for comparative genomics, phylogenetic analysis, and identifying genetic variations among a set of genomes.
 
