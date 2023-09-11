@@ -45,6 +45,11 @@ wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Wo
 ```
 
 ```bash
+# Download a reference assembly file that we will be working with today:
+wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_08/EC958.fasta
+```
+
+```bash
 # Download the fasta alignment file containing 7 concatenated MLST genes:
 wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Workshop/Week_08/MLST_alignment.fasta
 ```
@@ -187,8 +192,9 @@ If you use ResFinder in your research, remember to cite the paper:
 
 Rhys to do
 phylogenetics
-
-
+```bash
+parsnp -r EC958.fasta -d assemblies/ -o 20230911_Ecoli_parsnp_refEC958 -p 4 -c
+```
 
 ## Why have I learnt this?
 
