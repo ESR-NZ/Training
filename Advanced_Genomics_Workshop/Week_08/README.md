@@ -51,7 +51,10 @@ wget https://raw.githubusercontent.com/ESR-NZ/Training/main/Advanced_Genomics_Wo
 
 You have been given five `fasta` files. Among these files, those beginning with the prefix `16AR1` represent draft genome assemblies, each containing contiguous sequences (contigs). 
 
-<ESBL report reference>
+ESR contributes to the national public health surveillance of antibiotic resistance among human pathogens ([https://www.esr.cri.nz/our-research/nga-kete/infectious-disease-intelligence/antimicrobial-resistance-amr/](https://www.esr.cri.nz/our-research/nga-kete/infectious-disease-intelligence/antimicrobial-resistance-amr/)) in Aotearoa New Zealand. Until 2005, diagnostic laboratories referred all ESBL-producing Enterobacterales (ESBL-E) isolates to ESR for confirmation. This continuous surveillance was discontinued in August 2005 and replaced with annual 31-day surveys, typically in August (available at [https://www.esr.cri.nz/our-research/nga-kete/infectious-disease-intelligence/antimicrobial-resistance-amr/](https://www.esr.cri.nz/our-research/nga-kete/infectious-disease-intelligence/antimicrobial-resistance-amr/)).
+
+These four draft genome assemblies come from the 2016 survey:
+&emsp; **Heffernan H, Woodhouse R, Draper J, Ren X**. 2016 survey of extended-spectrum β-lactamase-producing Enterobacteriaceae. Porirua, New Zealand: Antimicrobial Reference Laboratory and Health Group, Institute of Environmental Science and Research Limited; 2018. Available from: [https://surv.esr.cri.nz/antimicrobial/esbl.php](https://surv.esr.cri.nz/antimicrobial/esbl.php) [Accessed 09 July 2021]
 
 Additionally, there is a file named `MLST_alignment.fasta`, which is an alignment file comprising seven concatenated genes used for MLST.
 
